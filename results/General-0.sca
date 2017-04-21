@@ -1,0 +1,199 @@
+version 2
+run General-0-20170420-21:40:51-19907
+attr D pcp_e
+attr F spr
+attr R pcp_e
+attr a 1
+attr configname General
+attr datetime 20170420-21:40:51
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars "$net=tree, $rep=0, $a=1, $F=spr, $ttl=1000, $D=pcp_e, $R=pcp_e, $window=60, $variance=0.05, $mytime=1800"
+attr iterationvars2 "$net=tree, $rep=0, $a=1, $F=spr, $ttl=1000, $D=pcp_e, $R=pcp_e, $window=60, $variance=0.05, $mytime=1800, $repetition=0"
+attr measurement "$net=tree, $rep=0, $a=1, $F=spr, $ttl=1000, $D=pcp_e, $R=pcp_e, $window=60, $variance=0.05, $mytime=1800"
+attr mytime 1800
+attr net tree
+attr network networks.${net=tree}_network
+attr processid 19907
+attr rep 0
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+attr ttl 1000
+attr variance 0.05
+attr window 60
+
+scalar . 	a 	1
+scalar . 	mytime 	1800
+scalar . 	rep 	0
+scalar . 	ttl 	1000
+scalar . 	variance 	0.05
+scalar . 	window 	60
+scalar tree_network.content_distribution 	repo-0 	0
+scalar tree_network.content_distribution 	client-0 	7
+scalar tree_network.content_distribution 	client-1 	8
+scalar tree_network.content_distribution 	client-2 	9
+scalar tree_network.content_distribution 	client-3 	10
+scalar tree_network.content_distribution 	client-4 	11
+scalar tree_network.content_distribution 	client-5 	12
+scalar tree_network.content_distribution 	client-6 	13
+scalar tree_network.content_distribution 	client-7 	14
+scalar tree_network.content_distribution 	repo-0_card 	100
+scalar tree_network.content_distribution 	repo-0_price 	0
+scalar tree_network.statistics 	p_hit 	0.29235880398671
+scalar tree_network.statistics 	interests 	521.73333333333
+scalar tree_network.statistics 	data 	294.73333333333
+scalar tree_network.statistics 	hdistance 	1.6276670716542
+scalar tree_network.statistics 	avg_time 	0.002600662998
+scalar tree_network.statistics 	downloads 	3400
+scalar tree_network.statistics 	total_cost 	0
+scalar tree_network.statistics 	total_replicas 	100
+scalar tree_network.statistics 	inner_hit 	0.67352941176471
+scalar tree_network.node[0].core_layer 	interests[0] 	1286
+scalar tree_network.node[0].core_layer 	repo_load[0] 	1110
+scalar tree_network.node[0].core_layer 	data[0] 	0
+scalar tree_network.node[0].core_layer 	repo_int[0] 	1110
+scalar tree_network.node[0].content_store 	p_hit[0] 	0.13685847589425
+scalar tree_network.node[0].content_store 	hits[0] 	176
+scalar tree_network.node[0].content_store 	misses[0] 	1110
+scalar tree_network.node[0].content_store 	decision_yes[0] 	1110
+scalar tree_network.node[0].content_store 	decision_no[0] 	0
+scalar tree_network.node[0].content_store 	decision_ratio[0] 	1
+scalar tree_network.node[1].core_layer 	interests[1] 	704
+scalar tree_network.node[1].core_layer 	data[1] 	622
+scalar tree_network.node[1].content_store 	p_hit[1] 	0.11505681818182
+scalar tree_network.node[1].content_store 	hits[1] 	81
+scalar tree_network.node[1].content_store 	misses[1] 	623
+scalar tree_network.node[1].content_store 	decision_yes[1] 	81
+scalar tree_network.node[1].content_store 	decision_no[1] 	541
+scalar tree_network.node[1].content_store 	decision_ratio[1] 	0.13022508038585
+scalar tree_network.node[2].core_layer 	interests[2] 	749
+scalar tree_network.node[2].core_layer 	data[2] 	664
+scalar tree_network.node[2].content_store 	p_hit[2] 	0.11081441922563
+scalar tree_network.node[2].content_store 	hits[2] 	83
+scalar tree_network.node[2].content_store 	misses[2] 	666
+scalar tree_network.node[2].content_store 	decision_yes[2] 	97
+scalar tree_network.node[2].content_store 	decision_no[2] 	567
+scalar tree_network.node[2].content_store 	decision_ratio[2] 	0.1460843373494
+scalar tree_network.node[3].core_layer 	interests[3] 	423
+scalar tree_network.node[3].core_layer 	data[3] 	363
+scalar tree_network.node[3].content_store 	p_hit[3] 	0.13947990543735
+scalar tree_network.node[3].content_store 	hits[3] 	59
+scalar tree_network.node[3].content_store 	misses[3] 	364
+scalar tree_network.node[3].content_store 	decision_yes[3] 	43
+scalar tree_network.node[3].content_store 	decision_no[3] 	320
+scalar tree_network.node[3].content_store 	decision_ratio[3] 	0.11845730027548
+scalar tree_network.node[4].core_layer 	interests[4] 	398
+scalar tree_network.node[4].core_layer 	data[4] 	340
+scalar tree_network.node[4].content_store 	p_hit[4] 	0.14572864321608
+scalar tree_network.node[4].content_store 	hits[4] 	58
+scalar tree_network.node[4].content_store 	misses[4] 	340
+scalar tree_network.node[4].content_store 	decision_yes[4] 	38
+scalar tree_network.node[4].content_store 	decision_no[4] 	302
+scalar tree_network.node[4].content_store 	decision_ratio[4] 	0.11176470588235
+scalar tree_network.node[5].core_layer 	interests[5] 	429
+scalar tree_network.node[5].core_layer 	data[5] 	368
+scalar tree_network.node[5].content_store 	p_hit[5] 	0.14219114219114
+scalar tree_network.node[5].content_store 	hits[5] 	61
+scalar tree_network.node[5].content_store 	misses[5] 	368
+scalar tree_network.node[5].content_store 	decision_yes[5] 	41
+scalar tree_network.node[5].content_store 	decision_no[5] 	327
+scalar tree_network.node[5].content_store 	decision_ratio[5] 	0.11141304347826
+scalar tree_network.node[6].core_layer 	interests[6] 	434
+scalar tree_network.node[6].core_layer 	data[6] 	381
+scalar tree_network.node[6].content_store 	p_hit[6] 	0.1221198156682
+scalar tree_network.node[6].content_store 	hits[6] 	53
+scalar tree_network.node[6].content_store 	misses[6] 	381
+scalar tree_network.node[6].content_store 	decision_yes[6] 	42
+scalar tree_network.node[6].content_store 	decision_no[6] 	339
+scalar tree_network.node[6].content_store 	decision_ratio[6] 	0.11023622047244
+scalar tree_network.node[7].core_layer 	interests[7] 	434
+scalar tree_network.node[7].core_layer 	data[7] 	202
+scalar tree_network.node[7].content_store 	p_hit[7] 	0.53456221198157
+scalar tree_network.node[7].content_store 	hits[7] 	232
+scalar tree_network.node[7].content_store 	misses[7] 	202
+scalar tree_network.node[7].content_store 	decision_yes[7] 	27
+scalar tree_network.node[7].content_store 	decision_no[7] 	175
+scalar tree_network.node[7].content_store 	decision_ratio[7] 	0.13366336633663
+scalar tree_network.node[8].core_layer 	interests[8] 	416
+scalar tree_network.node[8].core_layer 	data[8] 	220
+scalar tree_network.node[8].content_store 	p_hit[8] 	0.46875
+scalar tree_network.node[8].content_store 	hits[8] 	195
+scalar tree_network.node[8].content_store 	misses[8] 	221
+scalar tree_network.node[8].content_store 	decision_yes[8] 	32
+scalar tree_network.node[8].content_store 	decision_no[8] 	188
+scalar tree_network.node[8].content_store 	decision_ratio[8] 	0.14545454545455
+scalar tree_network.node[9].core_layer 	interests[9] 	397
+scalar tree_network.node[9].core_layer 	data[9] 	182
+scalar tree_network.node[9].content_store 	p_hit[9] 	0.54156171284635
+scalar tree_network.node[9].content_store 	hits[9] 	215
+scalar tree_network.node[9].content_store 	misses[9] 	182
+scalar tree_network.node[9].content_store 	decision_yes[9] 	28
+scalar tree_network.node[9].content_store 	decision_no[9] 	154
+scalar tree_network.node[9].content_store 	decision_ratio[9] 	0.15384615384615
+scalar tree_network.node[10].core_layer 	interests[10] 	436
+scalar tree_network.node[10].core_layer 	data[10] 	216
+scalar tree_network.node[10].content_store 	p_hit[10] 	0.50229357798165
+scalar tree_network.node[10].content_store 	hits[10] 	219
+scalar tree_network.node[10].content_store 	misses[10] 	217
+scalar tree_network.node[10].content_store 	decision_yes[10] 	30
+scalar tree_network.node[10].content_store 	decision_no[10] 	186
+scalar tree_network.node[10].content_store 	decision_ratio[10] 	0.13888888888889
+scalar tree_network.node[11].core_layer 	interests[11] 	446
+scalar tree_network.node[11].core_layer 	data[11] 	212
+scalar tree_network.node[11].content_store 	p_hit[11] 	0.52242152466368
+scalar tree_network.node[11].content_store 	hits[11] 	233
+scalar tree_network.node[11].content_store 	misses[11] 	213
+scalar tree_network.node[11].content_store 	decision_yes[11] 	31
+scalar tree_network.node[11].content_store 	decision_no[11] 	181
+scalar tree_network.node[11].content_store 	decision_ratio[11] 	0.14622641509434
+scalar tree_network.node[12].core_layer 	interests[12] 	417
+scalar tree_network.node[12].core_layer 	data[12] 	217
+scalar tree_network.node[12].content_store 	p_hit[12] 	0.47961630695444
+scalar tree_network.node[12].content_store 	hits[12] 	200
+scalar tree_network.node[12].content_store 	misses[12] 	217
+scalar tree_network.node[12].content_store 	decision_yes[12] 	30
+scalar tree_network.node[12].content_store 	decision_no[12] 	187
+scalar tree_network.node[12].content_store 	decision_ratio[12] 	0.13824884792627
+scalar tree_network.node[13].core_layer 	interests[13] 	418
+scalar tree_network.node[13].core_layer 	data[13] 	208
+scalar tree_network.node[13].content_store 	p_hit[13] 	0.50239234449761
+scalar tree_network.node[13].content_store 	hits[13] 	210
+scalar tree_network.node[13].content_store 	misses[13] 	208
+scalar tree_network.node[13].content_store 	decision_yes[13] 	28
+scalar tree_network.node[13].content_store 	decision_no[13] 	180
+scalar tree_network.node[13].content_store 	decision_ratio[13] 	0.13461538461538
+scalar tree_network.node[14].core_layer 	interests[14] 	439
+scalar tree_network.node[14].core_layer 	data[14] 	226
+scalar tree_network.node[14].content_store 	p_hit[14] 	0.48519362186788
+scalar tree_network.node[14].content_store 	hits[14] 	213
+scalar tree_network.node[14].content_store 	misses[14] 	226
+scalar tree_network.node[14].content_store 	decision_yes[14] 	25
+scalar tree_network.node[14].content_store 	decision_no[14] 	201
+scalar tree_network.node[14].content_store 	decision_ratio[14] 	0.11061946902655
+scalar tree_network.client[7] 	hdistance[7] 	1.5483870967742
+scalar tree_network.client[7] 	downloads[7] 	434
+scalar tree_network.client[7] 	avg_time[7] 	0.002456221088
+scalar tree_network.client[8] 	hdistance[8] 	1.710843373494
+scalar tree_network.client[8] 	downloads[8] 	415
+scalar tree_network.client[8] 	avg_time[8] 	0.002752916771
+scalar tree_network.client[9] 	hdistance[9] 	1.4937027707809
+scalar tree_network.client[9] 	downloads[9] 	397
+scalar tree_network.client[9] 	avg_time[9] 	0.002372795876
+scalar tree_network.client[10] 	hdistance[10] 	1.6390804597701
+scalar tree_network.client[10] 	downloads[10] 	435
+scalar tree_network.client[10] 	avg_time[10] 	0.002622351448
+scalar tree_network.client[11] 	hdistance[11] 	1.5303370786517
+scalar tree_network.client[11] 	downloads[11] 	445
+scalar tree_network.client[11] 	avg_time[11] 	0.00246813331
+scalar tree_network.client[12] 	hdistance[12] 	1.7314148681055
+scalar tree_network.client[12] 	downloads[12] 	417
+scalar tree_network.client[12] 	avg_time[12] 	0.002752997502
+scalar tree_network.client[13] 	hdistance[13] 	1.6363636363636
+scalar tree_network.client[13] 	downloads[13] 	418
+scalar tree_network.client[13] 	avg_time[13] 	0.002620247571
+scalar tree_network.client[14] 	hdistance[14] 	1.7312072892938
+scalar tree_network.client[14] 	downloads[14] 	439
+scalar tree_network.client[14] 	avg_time[14] 	0.002759640425
