@@ -1,21 +1,21 @@
-file 6441 1492699281                                            
+file 4739 1492740567                                            
 version 2
-run General-0-20170420-21:40:51-19907
-attr D pcp_e
+run General-0-20170421-09:05:47-8207
+attr D pcp_i
 attr F spr
-attr R pcp_e
+attr R pcp_i
 attr a 1
 attr configname General
-attr datetime 20170420-21:40:51
+attr datetime 20170421-09:05:47
 attr experiment General
 attr inifile omnetpp.ini
-attr iterationvars "$net=tree, $rep=0, $a=1, $F=spr, $ttl=1000, $D=pcp_e, $R=pcp_e, $window=60, $variance=0.05, $mytime=1800"
-attr iterationvars2 "$net=tree, $rep=0, $a=1, $F=spr, $ttl=1000, $D=pcp_e, $R=pcp_e, $window=60, $variance=0.05, $mytime=1800, $repetition=0"
-attr measurement "$net=tree, $rep=0, $a=1, $F=spr, $ttl=1000, $D=pcp_e, $R=pcp_e, $window=60, $variance=0.05, $mytime=1800"
+attr iterationvars "$net=tree, $rep=0, $a=1, $F=spr, $ttl=1000, $D=pcp_i, $R=pcp_i, $window=60, $variance=0.05, $mytime=1800"
+attr iterationvars2 "$net=tree, $rep=0, $a=1, $F=spr, $ttl=1000, $D=pcp_i, $R=pcp_i, $window=60, $variance=0.05, $mytime=1800, $repetition=0"
+attr measurement "$net=tree, $rep=0, $a=1, $F=spr, $ttl=1000, $D=pcp_i, $R=pcp_i, $window=60, $variance=0.05, $mytime=1800"
 attr mytime 1800
 attr net tree
 attr network networks.${net=tree}_network
-attr processid 19907
+attr processid 8207
 attr rep 0
 attr repetition 0
 attr replication #0
@@ -27,48 +27,48 @@ attr variance 0.05
 attr window 60
 
 vector 0  tree_network.node[0].content_store  hit_node[0]  ETV
-0	901 195 26960 26960 1 9 9 0.13333333333333 0.27272727272727 -nan -nan
+0	899 107 201 201 1 9 9 0 0.5 -nan -nan
 vector 1  tree_network.node[1].content_store  hit_node[1]  ETV
-1	1159 195 26960 26960 1 9 9 0.21428571428571 0.33333333333333 -nan -nan
+1	1069 108 201 201 1 9 9 0 0 -nan -nan
 vector 2  tree_network.node[2].content_store  hit_node[2]  ETV
-2	1417 206 26960 26960 1 9 9 0.11764705882353 0.33333333333333 -nan -nan
+2	1240 104 201 201 1 9 9 0 0.5 -nan -nan
 vector 3  tree_network.node[3].content_store  hit_node[3]  ETV
-3	1686 195 26960 26960 1 9 9 0.16666666666667 0.5 -nan -nan
+3	1407 111 201 201 1 9 9 0 0 -nan -nan
 vector 4  tree_network.node[4].content_store  hit_node[4]  ETV
-4	1944 183 26960 26960 1 9 9 0.2 0.66666666666667 -nan -nan
+4	1581 114 201 201 1 9 9 0 0 -nan -nan
 vector 5  tree_network.node[5].content_store  hit_node[5]  ETV
-5	2190 168 26960 26960 1 9 9 0 0.5 -nan -nan
+5	1758 105 201 201 1 9 9 0 0 -nan -nan
 vector 6  tree_network.node[6].content_store  hit_node[6]  ETV
-6	2421 207 26960 26960 1 9 9 0.083333333333333 0.5 -nan -nan
+6	1926 113 201 201 1 9 9 0 0.5 -nan -nan
 vector 7  tree_network.node[7].content_store  hit_node[7]  ETV
-7	2691 200 26960 26960 1 9 9 0.33333333333333 1 6.8658669988263 5.7753540836784
+7	2102 111 201 201 1 9 9 0 0 -nan -nan
 vector 8  tree_network.node[8].content_store  hit_node[8]  ETV
-8	2954 160 26960 26960 1 9 9 0 1 5.5252136752137 4.2592616334283
+8	2276 117 201 201 1 9 9 1.7976931348623e+308 -1.7976931348623e+308 -nan -nan
 vector 9  tree_network.node[9].content_store  hit_node[9]  ETV
-9	3177 162 26960 26960 1 9 9 0 1 6.1018767996709 5.070475550349
+9	2456 114 201 201 1 9 9 0 0 -nan -nan
 vector 10  tree_network.node[10].content_store  hit_node[10]  ETV
-10	3405 197 26960 26960 1 9 9 0.28571428571429 1 6.3109182484182 4.9575360905086
+10	2636 126 201 201 1 9 9 1.7976931348623e+308 -1.7976931348623e+308 -nan -nan
 vector 11  tree_network.node[11].content_store  hit_node[11]  ETV
-11	3668 158 26960 26960 1 9 9 0 1 5.9755952380952 5.0982146400227
+11	2828 120 201 201 1 9 9 0 0 -nan -nan
 vector 12  tree_network.node[12].content_store  hit_node[12]  ETV
-12	3892 166 26960 26960 1 9 9 0 1 5.4787545787546 4.4294257268983
+12	3014 117 201 201 1 9 9 0 0 -nan -nan
 vector 13  tree_network.node[13].content_store  hit_node[13]  ETV
-13	4124 197 26960 26960 1 9 9 0.16666666666667 1 6.0732976827094 4.713733809946
+13	3197 120 201 201 1 9 9 0 0 -nan -nan
 vector 14  tree_network.node[14].content_store  hit_node[14]  ETV
-14	4387 184 26960 26960 1 9 9 0.42857142857143 1 6.3065546218487 4.8307584492621
+14	3383 126 201 201 1 9 9 1.7976931348623e+308 -1.7976931348623e+308 -nan -nan
 vector 15  tree_network.client[7]  hdistance[7]  ETV
-15	4624 210 26960 26960 1 9 9 0 1.6 4.9839691553577 5.9262994524643
+15	3562 99 201 201 1 9 9 0 4 7 25
 vector 16  tree_network.client[8]  hdistance[8]  ETV
-16	4887 172 26960 26960 1 9 9 0 2.5 8.0123504273504 12.833638397619
+16	3714 99 201 201 1 9 9 0 0 0 0
 vector 17  tree_network.client[9]  hdistance[9]  ETV
-17	5112 168 26960 26960 1 9 9 0 3.4285714285714 7.8931693306693 17.431180524177
+17	3866 99 201 201 1 9 9 0 4 4 16
 vector 18  tree_network.client[10]  hdistance[10]  ETV
-18	5335 161 26960 26960 1 9 9 0 1.2857142857143 6.0281385281385 6.173951949926
+18	4020 99 201 201 1 9 9 0 0 0 0
 vector 19  tree_network.client[11]  hdistance[11]  ETV
-19	5551 169 26960 26960 1 9 9 0 2.7777777777778 8.4390873015873 17.545195145188
+19	4174 101 201 201 1 9 9 0 3.5 6.5 21.25
 vector 20  tree_network.client[12]  hdistance[12]  ETV
-20	5775 181 26960 26960 1 9 9 0 3.4285714285714 10.18021978022 21.069928148774
+20	4330 99 201 201 1 9 9 0 4 10 34
 vector 21  tree_network.client[13]  hdistance[13]  ETV
-21	6011 193 26960 26960 1 9 9 0 2.6666666666667 7.7617587641117 12.772043497292
+21	4484 101 201 201 1 9 9 0 4 5.5 18.25
 vector 22  tree_network.client[14]  hdistance[14]  ETV
-22	6259 182 26960 26960 1 9 9 0 1.6428571428571 6.7893697478992 7.8730625820917
+22	4640 99 201 201 1 9 9 0 0 0 0
