@@ -16,20 +16,24 @@
 */
 class PCP_I: public DecisionPolicy{
     public:
-	PCP_I(int dp){
-		this->dp = dp;
+	PCP_I(int theta, core_layer *core){
+		this->theta = theta;
+		this->core = core;
 	}
 
 	virtual bool data_to_cache(ccn_data *msg){
 	    double d = msg->getHops();
-	    int theta = msg->getTheta();
-	    if ( d==1 || theta >= dp )
+		long face = core->get_requesting_face(msg->getChunk());
+		std::bitset<sizeof(size_t) * CHAR_BIT> b(face); // list of faces that requested the data
+		int dp = b.count(); // number of faces that requested the data
+	    if ( d==1 || dp >= theta )
 		return true;
 	    return false;
 	}
 
     private:
-	int dp;
+	int theta;
+	core_layer *core;
 };
 
 #endif /* PCP_I_POLICY_H */

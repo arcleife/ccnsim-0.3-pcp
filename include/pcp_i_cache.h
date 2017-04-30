@@ -16,6 +16,7 @@ using namespace boost;
 
 struct chunk_info{
 	int h;
+	int hops;
 	long s1;
 	long s2;
 };

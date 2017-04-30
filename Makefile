@@ -163,9 +163,9 @@ depend:
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 $O/packets/ccn_data_m.o: packets/ccn_data_m.cc \
-  include/client.h \
+  packets/ccn_data_m.h \
   include/ccnsim.h \
-  packets/ccn_data_m.h
+  include/client.h
 $O/packets/ccn_interest_m.o: packets/ccn_interest_m.cc \
   include/client.h \
   include/ccnsim.h \
@@ -173,195 +173,200 @@ $O/packets/ccn_interest_m.o: packets/ccn_interest_m.cc \
 $O/src/error_handling.o: src/error_handling.cc \
   include/error_handling.h
 $O/src/clients/client.o: src/clients/client.cc \
-  include/zipf.h \
-  include/error_handling.h \
+  include/content_distribution.h \
   include/ccnsim.h \
-  include/statistics.h \
-  packets/ccn_interest_m.h \
-  include/client.h \
+  packets/ccn_data_m.h \
   include/ccn_data.h \
-  include/content_distribution.h \
-  include/ccn_interest.h \
-  packets/ccn_data_m.h
-$O/src/content/WeightedContentDistribution.o: src/content/WeightedContentDistribution.cc \
-  include/content_distribution.h \
-  include/client.h \
-  include/WeightedContentDistribution.h \
-  include/core_layer.h \
   include/error_handling.h \
+  include/statistics.h \
+  include/client.h \
   include/zipf.h \
-  include/ccnsim.h
+  include/ccn_interest.h \
+  packets/ccn_interest_m.h
+$O/src/content/WeightedContentDistribution.o: src/content/WeightedContentDistribution.cc \
+  include/ccnsim.h \
+  include/WeightedContentDistribution.h \
+  include/content_distribution.h \
+  include/core_layer.h \
+  include/zipf.h \
+  include/client.h \
+  include/error_handling.h
 $O/src/content/content_distribution.o: src/content/content_distribution.cc \
   include/client.h \
-  include/content_distribution.h \
-  include/ccnsim.h \
   include/zipf.h \
-  include/error_handling.h
+  include/error_handling.h \
+  include/ccnsim.h \
+  include/content_distribution.h
 $O/src/content/zipf.o: src/content/zipf.cc \
   include/zipf.h
 $O/src/node/core_layer.o: src/node/core_layer.cc \
-  include/base_cache.h \
-  include/ccnsim.h \
-  include/core_layer.h \
-  include/zipf.h \
-  include/error_handling.h \
   packets/ccn_interest_m.h \
-  include/client.h \
-  packets/ccn_data_m.h \
-  include/strategy_layer.h \
-  include/content_distribution.h \
-  include/ccn_data.h \
-  include/ccn_interest.h
-$O/src/node/cache/base_cache.o: src/node/cache/base_cache.cc \
-  include/client.h \
-  packets/ccn_data_m.h \
-  include/cost_related_decision_policies/costaware_policy.h \
-  include/cost_related_decision_policies/ideal_blind_policy.h \
-  include/decision_policy.h \
-  include/ccn_data.h \
-  include/ccnsim.h \
-  include/zipf.h \
-  include/error_handling.h \
-  include/cost_related_decision_policies/ideal_costaware_policy.h \
   include/core_layer.h \
-  include/always_policy.h \
-  include/betweenness_centrality.h \
-  include/cost_related_decision_policies/costaware_ancestor_policy.h \
-  include/lcd_policy.h \
-  include/pcp_i_policy.h \
+  include/error_handling.h \
+  include/zipf.h \
+  include/client.h \
+  include/ccn_interest.h \
+  include/ccnsim.h \
+  packets/ccn_data_m.h \
+  include/ccn_data.h \
+  include/strategy_layer.h \
+  include/base_cache.h \
+  include/content_distribution.h
+$O/src/node/cache/base_cache.o: src/node/cache/base_cache.cc \
   include/lru_cache.h \
-  include/fix_policy.h \
-  include/content_distribution.h \
+  include/core_layer.h \
+  include/cost_related_decision_policies/costaware_policy.h \
+  include/statistics.h \
   include/pcp_e_policy.h \
+  include/zipf.h \
+  include/lcd_policy.h \
+  packets/ccn_data_m.h \
+  include/ccnsim.h \
+  include/ccn_data.h \
+  include/always_policy.h \
+  include/fix_policy.h \
   include/cost_related_decision_policies/costaware_parent_policy.h \
-  include/cost_related_decision_policies/ideal_costaware_parent_policy.h \
   include/base_cache.h \
   include/prob_cache.h \
-  include/never_policy.h \
   include/WeightedContentDistribution.h \
-  include/statistics.h \
-  include/cost_related_decision_policies/ideal_costaware_grandparent_policy.h
-$O/src/node/cache/fifo_cache.o: src/node/cache/fifo_cache.cc \
-  include/base_cache.h \
-  include/fifo_cache.h \
-  include/ccnsim.h \
-  include/client.h
-$O/src/node/cache/lru_cache.o: src/node/cache/lru_cache.cc \
-  include/client.h \
+  include/betweenness_centrality.h \
+  include/cost_related_decision_policies/ideal_costaware_parent_policy.h \
   include/error_handling.h \
+  include/pcp_d_policy.h \
+  include/client.h \
+  include/decision_policy.h \
+  include/cost_related_decision_policies/ideal_costaware_policy.h \
+  include/pcp_i_policy.h \
+  include/cost_related_decision_policies/ideal_costaware_grandparent_policy.h \
+  include/cost_related_decision_policies/costaware_ancestor_policy.h \
+  include/cost_related_decision_policies/ideal_blind_policy.h \
+  include/never_policy.h \
+  include/content_distribution.h
+$O/src/node/cache/fifo_cache.o: src/node/cache/fifo_cache.cc \
+  include/fifo_cache.h \
+  include/client.h \
   include/ccnsim.h \
+  include/base_cache.h
+$O/src/node/cache/lru_cache.o: src/node/cache/lru_cache.cc \
+  include/error_handling.h \
+  include/client.h \
   include/lru_cache.h \
+  include/ccnsim.h \
   include/base_cache.h
 $O/src/node/cache/pcp_e_cache.o: src/node/cache/pcp_e_cache.cc \
-  include/client.h \
-  include/ccnsim.h \
-  include/error_handling.h \
   include/pcp_e_cache.h \
-  include/base_cache.h
+  include/base_cache.h \
+  include/ccnsim.h \
+  include/client.h \
+  include/error_handling.h
 $O/src/node/cache/pcp_i_cache.o: src/node/cache/pcp_i_cache.cc \
+  include/base_cache.h \
+  include/ccnsim.h \
+  include/client.h \
+  include/error_handling.h \
   include/pcp_i_cache.h
 $O/src/node/cache/random_cache.o: src/node/cache/random_cache.cc \
-  include/base_cache.h \
-  include/ccnsim.h \
+  include/client.h \
   include/random_cache.h \
-  include/client.h
+  include/base_cache.h \
+  include/ccnsim.h
 $O/src/node/cache/two_cache.o: src/node/cache/two_cache.cc \
   include/client.h \
+  include/base_cache.h \
   include/ccnsim.h \
-  include/two_cache.h \
-  include/base_cache.h
+  include/two_cache.h
 $O/src/node/strategy/MonopathStrategyLayer.o: src/node/strategy/MonopathStrategyLayer.cc \
-  include/client.h \
-  include/strategy_layer.h \
+  include/MonopathStrategyLayer.h \
   include/ccnsim.h \
-  include/error_handling.h \
-  include/MonopathStrategyLayer.h
+  include/strategy_layer.h \
+  include/client.h \
+  include/error_handling.h
 $O/src/node/strategy/MultipathStrategyLayer.o: src/node/strategy/MultipathStrategyLayer.cc \
-  include/MultipathStrategyLayer.h \
   include/ccnsim.h \
-  include/error_handling.h \
+  include/MultipathStrategyLayer.h \
   include/strategy_layer.h \
-  include/client.h
-$O/src/node/strategy/ProbabilisticSplitStrategy.o: src/node/strategy/ProbabilisticSplitStrategy.cc \
   include/client.h \
-  include/strategy_layer.h \
+  include/error_handling.h
+$O/src/node/strategy/ProbabilisticSplitStrategy.o: src/node/strategy/ProbabilisticSplitStrategy.cc \
+  include/base_cache.h \
   include/ccnsim.h \
   include/zipf.h \
-  include/error_handling.h \
   packets/ccn_interest_m.h \
-  include/ProbabilisticSplitStrategy.h \
   include/content_distribution.h \
+  include/MultipathStrategyLayer.h \
+  include/strategy_layer.h \
   include/ccn_interest.h \
-  include/base_cache.h \
-  include/MultipathStrategyLayer.h
+  include/client.h \
+  include/error_handling.h \
+  include/ProbabilisticSplitStrategy.h
 $O/src/node/strategy/nrr.o: src/node/strategy/nrr.cc \
+  include/error_handling.h \
+  include/client.h \
+  include/ccn_interest.h \
   include/nrr.h \
   include/content_distribution.h \
-  include/ccn_interest.h \
-  include/base_cache.h \
-  include/MonopathStrategyLayer.h \
   include/strategy_layer.h \
-  include/client.h \
-  packets/ccn_interest_m.h \
-  include/error_handling.h \
   include/zipf.h \
+  packets/ccn_interest_m.h \
+  include/MonopathStrategyLayer.h \
+  include/base_cache.h \
   include/ccnsim.h
 $O/src/node/strategy/nrr1.o: src/node/strategy/nrr1.cc \
-  include/ccn_interest.h \
-  include/content_distribution.h \
-  include/MonopathStrategyLayer.h \
   include/nrr1.h \
-  include/strategy_layer.h \
   include/client.h \
-  packets/ccn_interest_m.h \
-  include/error_handling.h \
-  include/zipf.h \
-  include/ccnsim.h
-$O/src/node/strategy/parallel_repository.o: src/node/strategy/parallel_repository.cc \
-  include/parallel_repository.h \
-  include/content_distribution.h \
   include/ccn_interest.h \
-  include/MonopathStrategyLayer.h \
-  include/client.h \
-  include/strategy_layer.h \
-  include/zipf.h \
   include/error_handling.h \
-  include/ccnsim.h \
-  packets/ccn_interest_m.h
-$O/src/node/strategy/random_repository.o: src/node/strategy/random_repository.cc \
-  include/error_handling.h \
-  include/zipf.h \
-  include/random_repository.h \
-  include/ccnsim.h \
-  packets/ccn_interest_m.h \
-  include/client.h \
   include/strategy_layer.h \
-  include/MonopathStrategyLayer.h \
   include/content_distribution.h \
-  include/ccn_interest.h
+  packets/ccn_interest_m.h \
+  include/zipf.h \
+  include/ccnsim.h \
+  include/MonopathStrategyLayer.h
+$O/src/node/strategy/parallel_repository.o: src/node/strategy/parallel_repository.cc \
+  include/error_handling.h \
+  include/client.h \
+  include/ccn_interest.h \
+  include/strategy_layer.h \
+  include/content_distribution.h \
+  packets/ccn_interest_m.h \
+  include/zipf.h \
+  include/ccnsim.h \
+  include/MonopathStrategyLayer.h \
+  include/parallel_repository.h
+$O/src/node/strategy/random_repository.o: src/node/strategy/random_repository.cc \
+  include/ccnsim.h \
+  include/random_repository.h \
+  include/MonopathStrategyLayer.h \
+  packets/ccn_interest_m.h \
+  include/zipf.h \
+  include/strategy_layer.h \
+  include/content_distribution.h \
+  include/error_handling.h \
+  include/ccn_interest.h \
+  include/client.h
 $O/src/node/strategy/spr.o: src/node/strategy/spr.cc \
   include/MonopathStrategyLayer.h \
-  include/ccn_interest.h \
-  include/content_distribution.h \
-  packets/ccn_interest_m.h \
+  include/spr.h \
   include/ccnsim.h \
   include/zipf.h \
-  include/error_handling.h \
+  packets/ccn_interest_m.h \
+  include/content_distribution.h \
   include/strategy_layer.h \
-  include/spr.h \
-  include/client.h
+  include/ccn_interest.h \
+  include/client.h \
+  include/error_handling.h
 $O/src/node/strategy/strategy_layer.o: src/node/strategy/strategy_layer.cc \
   include/ccnsim.h \
-  include/error_handling.h \
+  include/strategy_layer.h \
   include/client.h \
-  include/strategy_layer.h
+  include/error_handling.h
 $O/src/statistics/statistics.o: src/statistics/statistics.cc \
+  include/content_distribution.h \
   include/client.h \
+  include/error_handling.h \
   include/ccnsim.h \
+  include/base_cache.h \
+  include/lru_cache.h \
   include/core_layer.h \
   include/zipf.h \
-  include/error_handling.h \
-  include/lru_cache.h \
-  include/content_distribution.h \
-  include/statistics.h \
-  include/base_cache.h
+  include/statistics.h

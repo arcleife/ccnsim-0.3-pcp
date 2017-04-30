@@ -49,10 +49,6 @@
  *     //Betweenness decision strategy
  *     double btw = 0;// carries the higher betweenness identified by the interest packet
  * 
- *     //PCP decision strategy
- *     int theta = 0;// carries the number of faces that requested this data
- *     long f = 0;// carries list of faces that request this data
- * 
  *     bool found = false;
  * }
  * </pre>
@@ -93,8 +89,6 @@ class ccn_data_Base : public ::cPacket
     int TSI_var;
     double capacity_var;
     double btw_var;
-    int theta_var;
-    long f_var;
     bool found_var;
 
   private:
@@ -135,10 +129,6 @@ class ccn_data_Base : public ::cPacket
     virtual void setCapacity(double capacity);
     virtual double getBtw() const;
     virtual void setBtw(double btw);
-    virtual int getTheta() const;
-    virtual void setTheta(int theta);
-    virtual long getF() const;
-    virtual void setF(long f);
     virtual bool getFound() const;
     virtual void setFound(bool found);
 };

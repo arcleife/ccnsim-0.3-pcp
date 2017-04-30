@@ -8,9 +8,6 @@ module node like Inode{
     parameters:
 	string RS = default("lru_cache");
 	string FS = default("spr");
-	
-	int dp = default (2);
-	int rp = default (2);
 
 	int level = default (-1);
 	double betweenness = default (-1);

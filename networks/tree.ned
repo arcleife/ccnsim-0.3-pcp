@@ -4,7 +4,7 @@ network tree_network extends base_network{
 
     parameters:
         //Number of ccn nodes
-    	n = 15;
+    	n = 31;
 
 	//Number of repositories
 	node_repos = "0";
@@ -36,4 +36,20 @@ node[5].face++ <--> { delay = 1ms; } <-->node[11].face++;
 node[5].face++ <--> { delay = 1ms; } <-->node[12].face++;
 node[6].face++ <--> { delay = 1ms; } <-->node[13].face++;
 node[6].face++ <--> { delay = 1ms; } <-->node[14].face++;
+node[7].face++ <--> { delay = 1ms; } <-->node[15].face++;
+node[7].face++ <--> { delay = 1ms; } <-->node[16].face++;
+node[8].face++ <--> { delay = 1ms; } <-->node[17].face++;
+node[8].face++ <--> { delay = 1ms; } <-->node[18].face++;
+node[9].face++ <--> { delay = 1ms; } <-->node[19].face++;
+node[9].face++ <--> { delay = 1ms; } <-->node[20].face++;
+node[10].face++ <--> { delay = 1ms; } <-->node[21].face++;
+node[10].face++ <--> { delay = 1ms; } <-->node[22].face++;
+node[11].face++ <--> { delay = 1ms; } <-->node[23].face++;
+node[11].face++ <--> { delay = 1ms; } <-->node[24].face++;
+node[12].face++ <--> { delay = 1ms; } <-->node[25].face++;
+node[12].face++ <--> { delay = 1ms; } <-->node[26].face++;
+node[13].face++ <--> { delay = 1ms; } <-->node[27].face++;
+node[13].face++ <--> { delay = 1ms; } <-->node[28].face++;
+node[14].face++ <--> { delay = 1ms; } <-->node[29].face++;
+node[14].face++ <--> { delay = 1ms; } <-->node[30].face++;
 }

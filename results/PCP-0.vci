@@ -1,0 +1,591 @@
+file 28024 1493541523                                           
+version 2
+run PCP-0-20170430-15:38:21-6742
+attr F spr
+attr a 1.8
+attr configname PCP
+attr datetime 20170430-15:38:21
+attr experiment PCP
+attr inifile omnetpp.ini
+attr iterationvars "$net=tree8, $theta1=2, $theta2=2, $lambda=5, $a=1.8, $rep=0, $window=60, $variance=0.05, $mytime=1800, $F=spr, $ttl=1000"
+attr iterationvars2 "$net=tree8, $theta1=2, $theta2=2, $lambda=5, $a=1.8, $rep=0, $window=60, $variance=0.05, $mytime=1800, $F=spr, $ttl=1000, $repetition=0"
+attr lambda 5
+attr measurement "$net=tree8, $theta1=2, $theta2=2, $lambda=5, $a=1.8, $rep=0, $window=60, $variance=0.05, $mytime=1800, $F=spr, $ttl=1000"
+attr mytime 1800
+attr net tree8
+attr network networks.${net=tree8}_network
+attr processid 6742
+attr rep 0
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+attr theta1 2
+attr theta2 2
+attr ttl 1000
+attr variance 0.05
+attr window 60
+
+vector 0  tree8_network.node[0].content_store  hit_node[0]  ETV
+0	956 34 7954355 7954355 1 2 2 1.7976931348623e+308 -1.7976931348623e+308 -nan -nan
+vector 1  tree8_network.node[1].content_store  hit_node[1]  ETV
+1	1054 31 7954355 7954355 1 2 2 1 1 -nan -nan
+vector 2  tree8_network.node[2].content_store  hit_node[2]  ETV
+2	1149 28 7954355 7954355 1 2 2 1 1 2 2
+vector 3  tree8_network.node[3].content_store  hit_node[3]  ETV
+3	1241 31 7954355 7954355 1 2 2 1 1 -nan -nan
+vector 4  tree8_network.node[4].content_store  hit_node[4]  ETV
+4	1336 31 7954355 7954355 1 2 2 1 1 -nan -nan
+vector 5  tree8_network.node[5].content_store  hit_node[5]  ETV
+5	1431 28 7954355 7954355 1 2 2 1 1 2 2
+vector 6  tree8_network.node[6].content_store  hit_node[6]  ETV
+6	1523 43 7954355 7954355 1 2 2 0.99985296279959 1 1.9998529627996 1.9997059472191
+vector 7  tree8_network.node[7].content_store  hit_node[7]  ETV
+7	1630 28 7954355 7954355 1 2 2 1 1 2 2
+vector 8  tree8_network.node[8].content_store  hit_node[8]  ETV
+8	1722 28 7954355 7954355 1 2 2 1 1 2 2
+vector 9  tree8_network.node[9].content_store  hit_node[9]  ETV
+9	1814 28 7954355 7954355 1 2 2 1 1 2 2
+vector 10  tree8_network.node[10].content_store  hit_node[10]  ETV
+10	1909 45 7954355 7954355 1 2 2 0.99985513544836 1 1.9998551354484 1.9997102918825
+vector 11  tree8_network.node[11].content_store  hit_node[11]  ETV
+11	2021 45 7954355 7954355 1 2 2 0.99985276796231 1 1.9998527679623 1.9997055576019
+vector 12  tree8_network.node[12].content_store  hit_node[12]  ETV
+12	2133 45 7954355 7954355 1 2 2 0.99985484105095 1 1.999854841051 1.999709703173
+vector 13  tree8_network.node[13].content_store  hit_node[13]  ETV
+13	2245 45 7954355 7954355 1 2 2 0.99985298441635 1 1.9998529844163 1.9997059904463
+vector 14  tree8_network.node[14].content_store  hit_node[14]  ETV
+14	2357 45 7954355 7954355 1 2 2 0.99985392930178 1 1.9998539293018 1.9997078799402
+vector 15  tree8_network.node[15].content_store  hit_node[15]  ETV
+15	2469 58 7954355 7954355 1 2 2 0.999854672286 0.99995766478981 1.9998123370758 1.999624697064
+vector 16  tree8_network.node[16].content_store  hit_node[16]  ETV
+16	2594 44 7954355 7954355 1 2 2 0.9998526594961 1 1.9998526594961 1.9997053407014
+vector 17  tree8_network.node[17].content_store  hit_node[17]  ETV
+17	2705 45 7954355 7954355 1 2 2 0.99985740767147 1 1.9998574076715 1.9997148356755
+vector 18  tree8_network.node[18].content_store  hit_node[18]  ETV
+18	2817 30 7954355 7954355 1 2 2 1 1 2 2
+vector 19  tree8_network.node[19].content_store  hit_node[19]  ETV
+19	2914 45 7954355 7954355 1 2 2 0.99985304922851 1 1.9998530492285 1.9997061200515
+vector 20  tree8_network.node[20].content_store  hit_node[20]  ETV
+20	3026 45 7954355 7954355 1 2 2 0.99985403590717 1 1.9998540359072 1.9997080931199
+vector 21  tree8_network.node[21].content_store  hit_node[21]  ETV
+21	3138 30 7954355 7954355 1 2 2 1 1 2 2
+vector 22  tree8_network.node[22].content_store  hit_node[22]  ETV
+22	3235 45 7954355 7954355 1 2 2 0.99985724482512 1 1.9998572448251 1.9997145100293
+vector 23  tree8_network.node[23].content_store  hit_node[23]  ETV
+23	3347 30 7954355 7954355 1 2 2 1 1 2 2
+vector 24  tree8_network.node[24].content_store  hit_node[24]  ETV
+24	3444 30 7954355 7954355 1 2 2 1 1 2 2
+vector 25  tree8_network.node[25].content_store  hit_node[25]  ETV
+25	3541 45 7954355 7954355 1 2 2 0.99985563736105 1 1.9998556373611 1.9997112955627
+vector 26  tree8_network.node[26].content_store  hit_node[26]  ETV
+26	3653 45 7954355 7954355 1 2 2 0.99986010072748 1 1.9998601007275 1.9997202210268
+vector 27  tree8_network.node[27].content_store  hit_node[27]  ETV
+27	3765 45 7954355 7954355 1 2 2 0.99985289791115 1 1.9998528979112 1.9997058174613
+vector 28  tree8_network.node[28].content_store  hit_node[28]  ETV
+28	3877 30 7954355 7954355 1 2 2 1 1 2 2
+vector 29  tree8_network.node[29].content_store  hit_node[29]  ETV
+29	3974 45 7954355 7954355 1 2 2 0.99985339393051 1 1.9998533939305 1.9997068093544
+vector 30  tree8_network.node[30].content_store  hit_node[30]  ETV
+30	4086 45 7954355 7954355 1 2 2 0.99995827944428 1 1.9999582794443 1.9999165606292
+vector 31  tree8_network.node[31].content_store  hit_node[31]  ETV
+31	4198 30 7954355 7954355 1 2 2 0 0 0 0
+vector 32  tree8_network.node[32].content_store  hit_node[32]  ETV
+32	4295 30 7954355 7954355 1 2 2 0 0 0 0
+vector 33  tree8_network.node[33].content_store  hit_node[33]  ETV
+33	4392 30 7954355 7954355 1 2 2 0 0 0 0
+vector 34  tree8_network.node[34].content_store  hit_node[34]  ETV
+34	4489 30 7954355 7954355 1 2 2 0 0 0 0
+vector 35  tree8_network.node[35].content_store  hit_node[35]  ETV
+35	4586 30 7954355 7954355 1 2 2 0 0 0 0
+vector 36  tree8_network.node[36].content_store  hit_node[36]  ETV
+36	4683 30 7954355 7954355 1 2 2 0 0 0 0
+vector 37  tree8_network.node[37].content_store  hit_node[37]  ETV
+37	4780 30 7954355 7954355 1 2 2 0 0 0 0
+vector 38  tree8_network.node[38].content_store  hit_node[38]  ETV
+38	4877 30 7954355 7954355 1 2 2 0 0 0 0
+vector 39  tree8_network.node[39].content_store  hit_node[39]  ETV
+39	4974 30 7954355 7954355 1 2 2 0 0 0 0
+vector 40  tree8_network.node[40].content_store  hit_node[40]  ETV
+40	5071 30 7954355 7954355 1 2 2 0 0 0 0
+vector 41  tree8_network.node[41].content_store  hit_node[41]  ETV
+41	5168 30 7954355 7954355 1 2 2 0 0 0 0
+vector 42  tree8_network.node[42].content_store  hit_node[42]  ETV
+42	5265 30 7954355 7954355 1 2 2 0 0 0 0
+vector 43  tree8_network.node[43].content_store  hit_node[43]  ETV
+43	5362 30 7954355 7954355 1 2 2 0 0 0 0
+vector 44  tree8_network.node[44].content_store  hit_node[44]  ETV
+44	5459 30 7954355 7954355 1 2 2 0 0 0 0
+vector 45  tree8_network.node[45].content_store  hit_node[45]  ETV
+45	5556 30 7954355 7954355 1 2 2 0 0 0 0
+vector 46  tree8_network.node[46].content_store  hit_node[46]  ETV
+46	5653 30 7954355 7954355 1 2 2 0 0 0 0
+vector 47  tree8_network.node[47].content_store  hit_node[47]  ETV
+47	5750 30 7954355 7954355 1 2 2 0 0 0 0
+vector 48  tree8_network.node[48].content_store  hit_node[48]  ETV
+48	5847 30 7954355 7954355 1 2 2 0 0 0 0
+vector 49  tree8_network.node[49].content_store  hit_node[49]  ETV
+49	5944 30 7954355 7954355 1 2 2 0 0 0 0
+vector 50  tree8_network.node[50].content_store  hit_node[50]  ETV
+50	6041 30 7954355 7954355 1 2 2 0 0 0 0
+vector 51  tree8_network.node[51].content_store  hit_node[51]  ETV
+51	6138 30 7954355 7954355 1 2 2 0 0 0 0
+vector 52  tree8_network.node[52].content_store  hit_node[52]  ETV
+52	6235 30 7954355 7954355 1 2 2 0 0 0 0
+vector 53  tree8_network.node[53].content_store  hit_node[53]  ETV
+53	6332 30 7954355 7954355 1 2 2 0 0 0 0
+vector 54  tree8_network.node[54].content_store  hit_node[54]  ETV
+54	6429 30 7954355 7954355 1 2 2 0 0 0 0
+vector 55  tree8_network.node[55].content_store  hit_node[55]  ETV
+55	6526 30 7954355 7954355 1 2 2 0 0 0 0
+vector 56  tree8_network.node[56].content_store  hit_node[56]  ETV
+56	6623 30 7954355 7954355 1 2 2 0 0 0 0
+vector 57  tree8_network.node[57].content_store  hit_node[57]  ETV
+57	6720 30 7954355 7954355 1 2 2 0 0 0 0
+vector 58  tree8_network.node[58].content_store  hit_node[58]  ETV
+58	6817 30 7954355 7954355 1 2 2 0 0 0 0
+vector 59  tree8_network.node[59].content_store  hit_node[59]  ETV
+59	6914 30 7954355 7954355 1 2 2 0 0 0 0
+vector 60  tree8_network.node[60].content_store  hit_node[60]  ETV
+60	7011 30 7954355 7954355 1 2 2 0 0 0 0
+vector 61  tree8_network.node[61].content_store  hit_node[61]  ETV
+61	7108 30 7954355 7954355 1 2 2 0 0 0 0
+vector 62  tree8_network.node[62].content_store  hit_node[62]  ETV
+62	7205 30 7954355 7954355 1 2 2 0 0 0 0
+vector 63  tree8_network.node[63].content_store  hit_node[63]  ETV
+63	7302 30 7954355 7954355 1 2 2 0 0 0 0
+vector 64  tree8_network.node[64].content_store  hit_node[64]  ETV
+64	7399 30 7954355 7954355 1 2 2 0 0 0 0
+vector 65  tree8_network.node[65].content_store  hit_node[65]  ETV
+65	7496 30 7954355 7954355 1 2 2 0 0 0 0
+vector 66  tree8_network.node[66].content_store  hit_node[66]  ETV
+66	7593 30 7954355 7954355 1 2 2 0 0 0 0
+vector 67  tree8_network.node[67].content_store  hit_node[67]  ETV
+67	7690 30 7954355 7954355 1 2 2 0 0 0 0
+vector 68  tree8_network.node[68].content_store  hit_node[68]  ETV
+68	7787 30 7954355 7954355 1 2 2 0 0 0 0
+vector 69  tree8_network.node[69].content_store  hit_node[69]  ETV
+69	7884 30 7954355 7954355 1 2 2 0 0 0 0
+vector 70  tree8_network.node[70].content_store  hit_node[70]  ETV
+70	7981 30 7954355 7954355 1 2 2 0 0 0 0
+vector 71  tree8_network.node[71].content_store  hit_node[71]  ETV
+71	8078 30 7954355 7954355 1 2 2 0 0 0 0
+vector 72  tree8_network.node[72].content_store  hit_node[72]  ETV
+72	8175 30 7954355 7954355 1 2 2 0 0 0 0
+vector 73  tree8_network.node[73].content_store  hit_node[73]  ETV
+73	8272 30 7954355 7954355 1 2 2 0 0 0 0
+vector 74  tree8_network.node[74].content_store  hit_node[74]  ETV
+74	8369 30 7954355 7954355 1 2 2 0 0 0 0
+vector 75  tree8_network.node[75].content_store  hit_node[75]  ETV
+75	8466 30 7954355 7954355 1 2 2 0 0 0 0
+vector 76  tree8_network.node[76].content_store  hit_node[76]  ETV
+76	8563 30 7954355 7954355 1 2 2 0 0 0 0
+vector 77  tree8_network.node[77].content_store  hit_node[77]  ETV
+77	8660 30 7954355 7954355 1 2 2 0 0 0 0
+vector 78  tree8_network.node[78].content_store  hit_node[78]  ETV
+78	8757 30 7954355 7954355 1 2 2 0 0 0 0
+vector 79  tree8_network.node[79].content_store  hit_node[79]  ETV
+79	8854 30 7954355 7954355 1 2 2 0 0 0 0
+vector 80  tree8_network.node[80].content_store  hit_node[80]  ETV
+80	8951 30 7954355 7954355 1 2 2 0 0 0 0
+vector 81  tree8_network.node[81].content_store  hit_node[81]  ETV
+81	9048 30 7954355 7954355 1 2 2 0 0 0 0
+vector 82  tree8_network.node[82].content_store  hit_node[82]  ETV
+82	9145 30 7954355 7954355 1 2 2 0 0 0 0
+vector 83  tree8_network.node[83].content_store  hit_node[83]  ETV
+83	9242 30 7954355 7954355 1 2 2 0 0 0 0
+vector 84  tree8_network.node[84].content_store  hit_node[84]  ETV
+84	9339 30 7954355 7954355 1 2 2 0 0 0 0
+vector 85  tree8_network.node[85].content_store  hit_node[85]  ETV
+85	9436 30 7954355 7954355 1 2 2 0 0 0 0
+vector 86  tree8_network.node[86].content_store  hit_node[86]  ETV
+86	9533 30 7954355 7954355 1 2 2 0 0 0 0
+vector 87  tree8_network.node[87].content_store  hit_node[87]  ETV
+87	9630 30 7954355 7954355 1 2 2 0 0 0 0
+vector 88  tree8_network.node[88].content_store  hit_node[88]  ETV
+88	9727 30 7954355 7954355 1 2 2 0 0 0 0
+vector 89  tree8_network.node[89].content_store  hit_node[89]  ETV
+89	9824 30 7954355 7954355 1 2 2 0 0 0 0
+vector 90  tree8_network.node[90].content_store  hit_node[90]  ETV
+90	9921 30 7954355 7954355 1 2 2 0 0 0 0
+vector 91  tree8_network.node[91].content_store  hit_node[91]  ETV
+91	10018 30 7954355 7954355 1 2 2 0 0 0 0
+vector 92  tree8_network.node[92].content_store  hit_node[92]  ETV
+92	10115 30 7954355 7954355 1 2 2 0 0 0 0
+vector 93  tree8_network.node[93].content_store  hit_node[93]  ETV
+93	10212 30 7954355 7954355 1 2 2 0 0 0 0
+vector 94  tree8_network.node[94].content_store  hit_node[94]  ETV
+94	10309 30 7954355 7954355 1 2 2 0 0 0 0
+vector 95  tree8_network.node[95].content_store  hit_node[95]  ETV
+95	10406 30 7954355 7954355 1 2 2 0 0 0 0
+vector 96  tree8_network.node[96].content_store  hit_node[96]  ETV
+96	10503 30 7954355 7954355 1 2 2 0 0 0 0
+vector 97  tree8_network.node[97].content_store  hit_node[97]  ETV
+97	10600 30 7954355 7954355 1 2 2 0 0 0 0
+vector 98  tree8_network.node[98].content_store  hit_node[98]  ETV
+98	10697 30 7954355 7954355 1 2 2 0 0 0 0
+vector 99  tree8_network.node[99].content_store  hit_node[99]  ETV
+99	10794 30 7954355 7954355 1 2 2 0 0 0 0
+vector 100  tree8_network.node[100].content_store  hit_node[100]  ETV
+100	10894 32 7954355 7954355 1 2 2 0 0 0 0
+vector 101  tree8_network.node[101].content_store  hit_node[101]  ETV
+101	10996 32 7954355 7954355 1 2 2 0 0 0 0
+vector 102  tree8_network.node[102].content_store  hit_node[102]  ETV
+102	11098 32 7954355 7954355 1 2 2 0 0 0 0
+vector 103  tree8_network.node[103].content_store  hit_node[103]  ETV
+103	11200 32 7954355 7954355 1 2 2 0 0 0 0
+vector 104  tree8_network.node[104].content_store  hit_node[104]  ETV
+104	11302 32 7954355 7954355 1 2 2 0 0 0 0
+vector 105  tree8_network.node[105].content_store  hit_node[105]  ETV
+105	11404 32 7954355 7954355 1 2 2 0 0 0 0
+vector 106  tree8_network.node[106].content_store  hit_node[106]  ETV
+106	11506 32 7954355 7954355 1 2 2 0 0 0 0
+vector 107  tree8_network.node[107].content_store  hit_node[107]  ETV
+107	11608 32 7954355 7954355 1 2 2 0 0 0 0
+vector 108  tree8_network.node[108].content_store  hit_node[108]  ETV
+108	11710 32 7954355 7954355 1 2 2 0 0 0 0
+vector 109  tree8_network.node[109].content_store  hit_node[109]  ETV
+109	11812 32 7954355 7954355 1 2 2 0 0 0 0
+vector 110  tree8_network.node[110].content_store  hit_node[110]  ETV
+110	11914 32 7954355 7954355 1 2 2 0 0 0 0
+vector 111  tree8_network.node[111].content_store  hit_node[111]  ETV
+111	12016 32 7954355 7954355 1 2 2 0 0 0 0
+vector 112  tree8_network.node[112].content_store  hit_node[112]  ETV
+112	12118 32 7954355 7954355 1 2 2 0 0 0 0
+vector 113  tree8_network.node[113].content_store  hit_node[113]  ETV
+113	12220 32 7954355 7954355 1 2 2 0 0 0 0
+vector 114  tree8_network.node[114].content_store  hit_node[114]  ETV
+114	12322 32 7954355 7954355 1 2 2 0 0 0 0
+vector 115  tree8_network.node[115].content_store  hit_node[115]  ETV
+115	12424 32 7954355 7954355 1 2 2 0 0 0 0
+vector 116  tree8_network.node[116].content_store  hit_node[116]  ETV
+116	12526 32 7954355 7954355 1 2 2 0 0 0 0
+vector 117  tree8_network.node[117].content_store  hit_node[117]  ETV
+117	12628 32 7954355 7954355 1 2 2 0 0 0 0
+vector 118  tree8_network.node[118].content_store  hit_node[118]  ETV
+118	12730 32 7954355 7954355 1 2 2 0 0 0 0
+vector 119  tree8_network.node[119].content_store  hit_node[119]  ETV
+119	12832 32 7954355 7954355 1 2 2 0 0 0 0
+vector 120  tree8_network.node[120].content_store  hit_node[120]  ETV
+120	12934 32 7954355 7954355 1 2 2 0 0 0 0
+vector 121  tree8_network.node[121].content_store  hit_node[121]  ETV
+121	13036 32 7954355 7954355 1 2 2 0 0 0 0
+vector 122  tree8_network.node[122].content_store  hit_node[122]  ETV
+122	13138 32 7954355 7954355 1 2 2 0 0 0 0
+vector 123  tree8_network.node[123].content_store  hit_node[123]  ETV
+123	13240 32 7954355 7954355 1 2 2 0 0 0 0
+vector 124  tree8_network.node[124].content_store  hit_node[124]  ETV
+124	13342 32 7954355 7954355 1 2 2 0 0 0 0
+vector 125  tree8_network.node[125].content_store  hit_node[125]  ETV
+125	13444 32 7954355 7954355 1 2 2 0 0 0 0
+vector 126  tree8_network.node[126].content_store  hit_node[126]  ETV
+126	13546 32 7954355 7954355 1 2 2 0 0 0 0
+vector 127  tree8_network.node[127].content_store  hit_node[127]  ETV
+127	13648 32 7954355 7954355 1 2 2 0 0 0 0
+vector 128  tree8_network.node[128].content_store  hit_node[128]  ETV
+128	13750 32 7954355 7954355 1 2 2 0 0 0 0
+vector 129  tree8_network.node[129].content_store  hit_node[129]  ETV
+129	13852 32 7954355 7954355 1 2 2 0 0 0 0
+vector 130  tree8_network.node[130].content_store  hit_node[130]  ETV
+130	13954 32 7954355 7954355 1 2 2 0 0 0 0
+vector 131  tree8_network.node[131].content_store  hit_node[131]  ETV
+131	14056 32 7954355 7954355 1 2 2 0 0 0 0
+vector 132  tree8_network.node[132].content_store  hit_node[132]  ETV
+132	14158 32 7954355 7954355 1 2 2 0 0 0 0
+vector 133  tree8_network.node[133].content_store  hit_node[133]  ETV
+133	14260 32 7954355 7954355 1 2 2 0 0 0 0
+vector 134  tree8_network.node[134].content_store  hit_node[134]  ETV
+134	14362 32 7954355 7954355 1 2 2 0 0 0 0
+vector 135  tree8_network.node[135].content_store  hit_node[135]  ETV
+135	14464 32 7954355 7954355 1 2 2 0 0 0 0
+vector 136  tree8_network.node[136].content_store  hit_node[136]  ETV
+136	14566 32 7954355 7954355 1 2 2 0 0 0 0
+vector 137  tree8_network.node[137].content_store  hit_node[137]  ETV
+137	14668 32 7954355 7954355 1 2 2 0 0 0 0
+vector 138  tree8_network.node[138].content_store  hit_node[138]  ETV
+138	14770 32 7954355 7954355 1 2 2 0 0 0 0
+vector 139  tree8_network.node[139].content_store  hit_node[139]  ETV
+139	14872 32 7954355 7954355 1 2 2 0 0 0 0
+vector 140  tree8_network.node[140].content_store  hit_node[140]  ETV
+140	14974 32 7954355 7954355 1 2 2 0 0 0 0
+vector 141  tree8_network.node[141].content_store  hit_node[141]  ETV
+141	15076 32 7954355 7954355 1 2 2 0 0 0 0
+vector 142  tree8_network.node[142].content_store  hit_node[142]  ETV
+142	15178 32 7954355 7954355 1 2 2 0 0 0 0
+vector 143  tree8_network.node[143].content_store  hit_node[143]  ETV
+143	15280 32 7954355 7954355 1 2 2 0 0 0 0
+vector 144  tree8_network.node[144].content_store  hit_node[144]  ETV
+144	15382 32 7954355 7954355 1 2 2 0 0 0 0
+vector 145  tree8_network.node[145].content_store  hit_node[145]  ETV
+145	15484 32 7954355 7954355 1 2 2 0 0 0 0
+vector 146  tree8_network.node[146].content_store  hit_node[146]  ETV
+146	15586 32 7954355 7954355 1 2 2 0 0 0 0
+vector 147  tree8_network.node[147].content_store  hit_node[147]  ETV
+147	15688 32 7954355 7954355 1 2 2 0 0 0 0
+vector 148  tree8_network.node[148].content_store  hit_node[148]  ETV
+148	15790 32 7954355 7954355 1 2 2 0 0 0 0
+vector 149  tree8_network.node[149].content_store  hit_node[149]  ETV
+149	15892 32 7954355 7954355 1 2 2 0 0 0 0
+vector 150  tree8_network.node[150].content_store  hit_node[150]  ETV
+150	15994 32 7954355 7954355 1 2 2 0 0 0 0
+vector 151  tree8_network.node[151].content_store  hit_node[151]  ETV
+151	16096 32 7954355 7954355 1 2 2 0 0 0 0
+vector 152  tree8_network.node[152].content_store  hit_node[152]  ETV
+152	16198 32 7954355 7954355 1 2 2 0 0 0 0
+vector 153  tree8_network.node[153].content_store  hit_node[153]  ETV
+153	16300 32 7954355 7954355 1 2 2 0 0 0 0
+vector 154  tree8_network.node[154].content_store  hit_node[154]  ETV
+154	16402 32 7954355 7954355 1 2 2 0 0 0 0
+vector 155  tree8_network.node[155].content_store  hit_node[155]  ETV
+155	16504 32 7954355 7954355 1 2 2 0 0 0 0
+vector 156  tree8_network.client[31]  hdistance[31]  ETV
+156	16593 32 7954355 7954355 1 2 2 1 1 2 2
+vector 157  tree8_network.client[32]  hdistance[32]  ETV
+157	16682 46 7954355 7954355 1 2 2 1 1.0007547169811 2.0007547169811 2.00151000356
+vector 158  tree8_network.client[33]  hdistance[33]  ETV
+158	16785 32 7954355 7954355 1 2 2 1 1 2 2
+vector 159  tree8_network.client[34]  hdistance[34]  ETV
+159	16874 32 7954355 7954355 1 2 2 1 1 2 2
+vector 160  tree8_network.client[35]  hdistance[35]  ETV
+160	16963 32 7954355 7954355 1 2 2 1 1 2 2
+vector 161  tree8_network.client[36]  hdistance[36]  ETV
+161	17052 32 7954355 7954355 1 2 2 1 1 2 2
+vector 162  tree8_network.client[37]  hdistance[37]  ETV
+162	17141 32 7954355 7954355 1 2 2 1 1 2 2
+vector 163  tree8_network.client[38]  hdistance[38]  ETV
+163	17230 32 7954355 7954355 1 2 2 1 1 2 2
+vector 164  tree8_network.client[39]  hdistance[39]  ETV
+164	17319 32 7954355 7954355 1 2 2 1 1 2 2
+vector 165  tree8_network.client[40]  hdistance[40]  ETV
+165	17408 32 7954355 7954355 1 2 2 1 1 2 2
+vector 166  tree8_network.client[41]  hdistance[41]  ETV
+166	17497 32 7954355 7954355 1 2 2 1 1 2 2
+vector 167  tree8_network.client[42]  hdistance[42]  ETV
+167	17586 32 7954355 7954355 1 2 2 1 1 2 2
+vector 168  tree8_network.client[43]  hdistance[43]  ETV
+168	17675 32 7954355 7954355 1 2 2 1 1 2 2
+vector 169  tree8_network.client[44]  hdistance[44]  ETV
+169	17764 32 7954355 7954355 1 2 2 1 1 2 2
+vector 170  tree8_network.client[45]  hdistance[45]  ETV
+170	17853 32 7954355 7954355 1 2 2 1 1 2 2
+vector 171  tree8_network.client[46]  hdistance[46]  ETV
+171	17942 32 7954355 7954355 1 2 2 1 1 2 2
+vector 172  tree8_network.client[47]  hdistance[47]  ETV
+172	18031 32 7954355 7954355 1 2 2 1 1 2 2
+vector 173  tree8_network.client[48]  hdistance[48]  ETV
+173	18120 32 7954355 7954355 1 2 2 1 1 2 2
+vector 174  tree8_network.client[49]  hdistance[49]  ETV
+174	18209 32 7954355 7954355 1 2 2 1 1 2 2
+vector 175  tree8_network.client[50]  hdistance[50]  ETV
+175	18298 32 7954355 7954355 1 2 2 1 1 2 2
+vector 176  tree8_network.client[51]  hdistance[51]  ETV
+176	18387 32 7954355 7954355 1 2 2 1 1 2 2
+vector 177  tree8_network.client[52]  hdistance[52]  ETV
+177	18476 46 7954355 7954355 1 2 2 1 1.0007604562738 2.0007604562738 2.0015214908413
+vector 178  tree8_network.client[53]  hdistance[53]  ETV
+178	18579 32 7954355 7954355 1 2 2 1 1 2 2
+vector 179  tree8_network.client[54]  hdistance[54]  ETV
+179	18668 32 7954355 7954355 1 2 2 1 1 2 2
+vector 180  tree8_network.client[55]  hdistance[55]  ETV
+180	18757 32 7954355 7954355 1 2 2 1 1 2 2
+vector 181  tree8_network.client[56]  hdistance[56]  ETV
+181	18846 32 7954355 7954355 1 2 2 1 1 2 2
+vector 182  tree8_network.client[57]  hdistance[57]  ETV
+182	18935 32 7954355 7954355 1 2 2 1 1 2 2
+vector 183  tree8_network.client[58]  hdistance[58]  ETV
+183	19024 32 7954355 7954355 1 2 2 1 1 2 2
+vector 184  tree8_network.client[59]  hdistance[59]  ETV
+184	19113 32 7954355 7954355 1 2 2 1 1 2 2
+vector 185  tree8_network.client[60]  hdistance[60]  ETV
+185	19202 46 7954355 7954355 1 2 2 1 1.0007468259895 2.0007468259895 2.0014942097281
+vector 186  tree8_network.client[61]  hdistance[61]  ETV
+186	19305 32 7954355 7954355 1 2 2 1 1 2 2
+vector 187  tree8_network.client[62]  hdistance[62]  ETV
+187	19394 32 7954355 7954355 1 2 2 1 1 2 2
+vector 188  tree8_network.client[63]  hdistance[63]  ETV
+188	19483 32 7954355 7954355 1 2 2 1 1 2 2
+vector 189  tree8_network.client[64]  hdistance[64]  ETV
+189	19572 32 7954355 7954355 1 2 2 1 1 2 2
+vector 190  tree8_network.client[65]  hdistance[65]  ETV
+190	19661 46 7954355 7954355 1 2 2 1 1.0007042253521 2.0007042253521 2.0014089466376
+vector 191  tree8_network.client[66]  hdistance[66]  ETV
+191	19764 32 7954355 7954355 1 2 2 1 1 2 2
+vector 192  tree8_network.client[67]  hdistance[67]  ETV
+192	19853 32 7954355 7954355 1 2 2 1 1 2 2
+vector 193  tree8_network.client[68]  hdistance[68]  ETV
+193	19942 32 7954355 7954355 1 2 2 1 1 2 2
+vector 194  tree8_network.client[69]  hdistance[69]  ETV
+194	20031 46 7954355 7954355 1 2 2 1 1.0007246376812 2.0007246376812 2.0014498004621
+vector 195  tree8_network.client[70]  hdistance[70]  ETV
+195	20134 32 7954355 7954355 1 2 2 1 1 2 2
+vector 196  tree8_network.client[71]  hdistance[71]  ETV
+196	20223 32 7954355 7954355 1 2 2 1 1 2 2
+vector 197  tree8_network.client[72]  hdistance[72]  ETV
+197	20312 32 7954355 7954355 1 2 2 1 1 2 2
+vector 198  tree8_network.client[73]  hdistance[73]  ETV
+198	20401 46 7954355 7954355 1 2 2 1 1.0007225433526 2.0007225433526 2.0014456087741
+vector 199  tree8_network.client[74]  hdistance[74]  ETV
+199	20504 32 7954355 7954355 1 2 2 1 1 2 2
+vector 200  tree8_network.client[75]  hdistance[75]  ETV
+200	20593 32 7954355 7954355 1 2 2 1 1 2 2
+vector 201  tree8_network.client[76]  hdistance[76]  ETV
+201	20682 32 7954355 7954355 1 2 2 1 1 2 2
+vector 202  tree8_network.client[77]  hdistance[77]  ETV
+202	20771 32 7954355 7954355 1 2 2 1 1 2 2
+vector 203  tree8_network.client[78]  hdistance[78]  ETV
+203	20860 46 7954355 7954355 1 2 2 1 1.0002097315436 2.0002097315436 2.0004195070746
+vector 204  tree8_network.client[79]  hdistance[79]  ETV
+204	20963 32 7954355 7954355 1 2 2 1 1 2 2
+vector 205  tree8_network.client[80]  hdistance[80]  ETV
+205	21052 46 7954355 7954355 1 2 2 1 1.0007380073801 2.0007380073801 2.001476559415
+vector 206  tree8_network.client[81]  hdistance[81]  ETV
+206	21155 32 7954355 7954355 1 2 2 1 1 2 2
+vector 207  tree8_network.client[82]  hdistance[82]  ETV
+207	21244 32 7954355 7954355 1 2 2 1 1 2 2
+vector 208  tree8_network.client[83]  hdistance[83]  ETV
+208	21333 46 7954355 7954355 1 2 2 1 1.0007788161994 2.0007788161994 2.0015582389534
+vector 209  tree8_network.client[84]  hdistance[84]  ETV
+209	21436 32 7954355 7954355 1 2 2 1 1 2 2
+vector 210  tree8_network.client[85]  hdistance[85]  ETV
+210	21525 32 7954355 7954355 1 2 2 1 1 2 2
+vector 211  tree8_network.client[86]  hdistance[86]  ETV
+211	21614 32 7954355 7954355 1 2 2 1 1 2 2
+vector 212  tree8_network.client[87]  hdistance[87]  ETV
+212	21703 46 7954355 7954355 1 2 2 1 1.0007112375533 2.0007112375533 2.0014229809655
+vector 213  tree8_network.client[88]  hdistance[88]  ETV
+213	21806 32 7954355 7954355 1 2 2 1 1 2 2
+vector 214  tree8_network.client[89]  hdistance[89]  ETV
+214	21895 32 7954355 7954355 1 2 2 1 1 2 2
+vector 215  tree8_network.client[90]  hdistance[90]  ETV
+215	21984 32 7954355 7954355 1 2 2 1 1 2 2
+vector 216  tree8_network.client[91]  hdistance[91]  ETV
+216	22073 32 7954355 7954355 1 2 2 1 1 2 2
+vector 217  tree8_network.client[92]  hdistance[92]  ETV
+217	22162 32 7954355 7954355 1 2 2 1 1 2 2
+vector 218  tree8_network.client[93]  hdistance[93]  ETV
+218	22251 32 7954355 7954355 1 2 2 1 1 2 2
+vector 219  tree8_network.client[94]  hdistance[94]  ETV
+219	22340 32 7954355 7954355 1 2 2 1 1 2 2
+vector 220  tree8_network.client[95]  hdistance[95]  ETV
+220	22429 32 7954355 7954355 1 2 2 1 1 2 2
+vector 221  tree8_network.client[96]  hdistance[96]  ETV
+221	22518 32 7954355 7954355 1 2 2 1 1 2 2
+vector 222  tree8_network.client[97]  hdistance[97]  ETV
+222	22607 32 7954355 7954355 1 2 2 1 1 2 2
+vector 223  tree8_network.client[98]  hdistance[98]  ETV
+223	22696 32 7954355 7954355 1 2 2 1 1 2 2
+vector 224  tree8_network.client[99]  hdistance[99]  ETV
+224	22785 32 7954355 7954355 1 2 2 1 1 2 2
+vector 225  tree8_network.client[100]  hdistance[100]  ETV
+225	22876 46 7954355 7954355 1 2 2 1 1.0007251631617 2.0007251631617 2.001450852185
+vector 226  tree8_network.client[101]  hdistance[101]  ETV
+226	22981 32 7954355 7954355 1 2 2 1 1 2 2
+vector 227  tree8_network.client[102]  hdistance[102]  ETV
+227	23072 32 7954355 7954355 1 2 2 1 1 2 2
+vector 228  tree8_network.client[103]  hdistance[103]  ETV
+228	23163 32 7954355 7954355 1 2 2 1 1 2 2
+vector 229  tree8_network.client[104]  hdistance[104]  ETV
+229	23254 46 7954355 7954355 1 2 2 1 1.0007007708479 2.0007007708479 2.0014020327756
+vector 230  tree8_network.client[105]  hdistance[105]  ETV
+230	23359 32 7954355 7954355 1 2 2 1 1 2 2
+vector 231  tree8_network.client[106]  hdistance[106]  ETV
+231	23450 32 7954355 7954355 1 2 2 1 1 2 2
+vector 232  tree8_network.client[107]  hdistance[107]  ETV
+232	23541 32 7954355 7954355 1 2 2 1 1 2 2
+vector 233  tree8_network.client[108]  hdistance[108]  ETV
+233	23632 32 7954355 7954355 1 2 2 1 1 2 2
+vector 234  tree8_network.client[109]  hdistance[109]  ETV
+234	23723 32 7954355 7954355 1 2 2 1 1 2 2
+vector 235  tree8_network.client[110]  hdistance[110]  ETV
+235	23814 32 7954355 7954355 1 2 2 1 1 2 2
+vector 236  tree8_network.client[111]  hdistance[111]  ETV
+236	23905 32 7954355 7954355 1 2 2 1 1 2 2
+vector 237  tree8_network.client[112]  hdistance[112]  ETV
+237	23996 32 7954355 7954355 1 2 2 1 1 2 2
+vector 238  tree8_network.client[113]  hdistance[113]  ETV
+238	24087 32 7954355 7954355 1 2 2 1 1 2 2
+vector 239  tree8_network.client[114]  hdistance[114]  ETV
+239	24178 46 7954355 7954355 1 2 2 1 1.0007262164125 2.0007262164125 2.0014529602153
+vector 240  tree8_network.client[115]  hdistance[115]  ETV
+240	24283 32 7954355 7954355 1 2 2 1 1 2 2
+vector 241  tree8_network.client[116]  hdistance[116]  ETV
+241	24374 32 7954355 7954355 1 2 2 1 1 2 2
+vector 242  tree8_network.client[117]  hdistance[117]  ETV
+242	24465 32 7954355 7954355 1 2 2 1 1 2 2
+vector 243  tree8_network.client[118]  hdistance[118]  ETV
+243	24556 32 7954355 7954355 1 2 2 1 1 2 2
+vector 244  tree8_network.client[119]  hdistance[119]  ETV
+244	24647 32 7954355 7954355 1 2 2 1 1 2 2
+vector 245  tree8_network.client[120]  hdistance[120]  ETV
+245	24738 32 7954355 7954355 1 2 2 1 1 2 2
+vector 246  tree8_network.client[121]  hdistance[121]  ETV
+246	24829 32 7954355 7954355 1 2 2 1 1 2 2
+vector 247  tree8_network.client[122]  hdistance[122]  ETV
+247	24920 32 7954355 7954355 1 2 2 1 1 2 2
+vector 248  tree8_network.client[123]  hdistance[123]  ETV
+248	25011 32 7954355 7954355 1 2 2 1 1 2 2
+vector 249  tree8_network.client[124]  hdistance[124]  ETV
+249	25102 32 7954355 7954355 1 2 2 1 1 2 2
+vector 250  tree8_network.client[125]  hdistance[125]  ETV
+250	25193 32 7954355 7954355 1 2 2 1 1 2 2
+vector 251  tree8_network.client[126]  hdistance[126]  ETV
+251	25284 32 7954355 7954355 1 2 2 1 1 2 2
+vector 252  tree8_network.client[127]  hdistance[127]  ETV
+252	25375 45 7954355 7954355 1 2 2 1 1.000710732054 2.000710732054 2.0014219692481
+vector 253  tree8_network.client[128]  hdistance[128]  ETV
+253	25479 32 7954355 7954355 1 2 2 1 1 2 2
+vector 254  tree8_network.client[129]  hdistance[129]  ETV
+254	25570 32 7954355 7954355 1 2 2 1 1 2 2
+vector 255  tree8_network.client[130]  hdistance[130]  ETV
+255	25661 32 7954355 7954355 1 2 2 1 1 2 2
+vector 256  tree8_network.client[131]  hdistance[131]  ETV
+256	25752 32 7954355 7954355 1 2 2 1 1 2 2
+vector 257  tree8_network.client[132]  hdistance[132]  ETV
+257	25843 46 7954355 7954355 1 2 2 1 1.0007158196135 2.0007158196135 2.0014321516246
+vector 258  tree8_network.client[133]  hdistance[133]  ETV
+258	25948 32 7954355 7954355 1 2 2 1 1 2 2
+vector 259  tree8_network.client[134]  hdistance[134]  ETV
+259	26039 32 7954355 7954355 1 2 2 1 1 2 2
+vector 260  tree8_network.client[135]  hdistance[135]  ETV
+260	26130 32 7954355 7954355 1 2 2 1 1 2 2
+vector 261  tree8_network.client[136]  hdistance[136]  ETV
+261	26221 46 7954355 7954355 1 2 2 1 1.0007199424046 2.0007199424046 2.0014404031263
+vector 262  tree8_network.client[137]  hdistance[137]  ETV
+262	26326 32 7954355 7954355 1 2 2 1 1 2 2
+vector 263  tree8_network.client[138]  hdistance[138]  ETV
+263	26417 32 7954355 7954355 1 2 2 1 1 2 2
+vector 264  tree8_network.client[139]  hdistance[139]  ETV
+264	26508 32 7954355 7954355 1 2 2 1 1 2 2
+vector 265  tree8_network.client[140]  hdistance[140]  ETV
+265	26599 32 7954355 7954355 1 2 2 1 1 2 2
+vector 266  tree8_network.client[141]  hdistance[141]  ETV
+266	26690 32 7954355 7954355 1 2 2 1 1 2 2
+vector 267  tree8_network.client[142]  hdistance[142]  ETV
+267	26781 32 7954355 7954355 1 2 2 1 1 2 2
+vector 268  tree8_network.client[143]  hdistance[143]  ETV
+268	26872 32 7954355 7954355 1 2 2 1 1 2 2
+vector 269  tree8_network.client[144]  hdistance[144]  ETV
+269	26963 32 7954355 7954355 1 2 2 1 1 2 2
+vector 270  tree8_network.client[145]  hdistance[145]  ETV
+270	27054 32 7954355 7954355 1 2 2 1 1 2 2
+vector 271  tree8_network.client[146]  hdistance[146]  ETV
+271	27145 32 7954355 7954355 1 2 2 1 1 2 2
+vector 272  tree8_network.client[147]  hdistance[147]  ETV
+272	27236 46 7954355 7954355 1 2 2 1 1.0007547169811 2.0007547169811 2.00151000356
+vector 273  tree8_network.client[148]  hdistance[148]  ETV
+273	27341 32 7954355 7954355 1 2 2 1 1 2 2
+vector 274  tree8_network.client[149]  hdistance[149]  ETV
+274	27432 32 7954355 7954355 1 2 2 1 1 2 2
+vector 275  tree8_network.client[150]  hdistance[150]  ETV
+275	27523 32 7954355 7954355 1 2 2 1 1 2 2
+vector 276  tree8_network.client[151]  hdistance[151]  ETV
+276	27614 32 7954355 7954355 1 2 2 1 1 2 2
+vector 277  tree8_network.client[152]  hdistance[152]  ETV
+277	27705 32 7954355 7954355 1 2 2 1 1 2 2
+vector 278  tree8_network.client[153]  hdistance[153]  ETV
+278	27796 32 7954355 7954355 1 2 2 1 1 2 2
+vector 279  tree8_network.client[154]  hdistance[154]  ETV
+279	27887 32 7954355 7954355 1 2 2 1 1 2 2
+vector 280  tree8_network.client[155]  hdistance[155]  ETV
+280	27978 46 7954355 7954355 1 2 2 1 1.0002063983488 2.0002063983488 2.0004128392979

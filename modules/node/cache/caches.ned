@@ -15,6 +15,8 @@ simple base_cache like cache
 
 	string DS = default("lce");
 	int C = default (100);
+	int theta1 = default (2);
+	int theta2 = default (2);
     gates:
 	inout cache_port;
 }

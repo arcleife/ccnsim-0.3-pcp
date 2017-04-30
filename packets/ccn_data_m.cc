@@ -63,8 +63,6 @@ ccn_data_Base::ccn_data_Base(const char *name, int kind) : ::cPacket(name,kind)
     this->TSI_var = 0;
     this->capacity_var = 0;
     this->btw_var = 0;
-    this->theta_var = 0;
-    this->f_var = 0;
     this->found_var = false;
 }
 
@@ -96,8 +94,6 @@ void ccn_data_Base::copy(const ccn_data_Base& other)
     this->TSI_var = other.TSI_var;
     this->capacity_var = other.capacity_var;
     this->btw_var = other.btw_var;
-    this->theta_var = other.theta_var;
-    this->f_var = other.f_var;
     this->found_var = other.found_var;
 }
 
@@ -113,8 +109,6 @@ void ccn_data_Base::parsimPack(cCommBuffer *b)
     doPacking(b,this->TSI_var);
     doPacking(b,this->capacity_var);
     doPacking(b,this->btw_var);
-    doPacking(b,this->theta_var);
-    doPacking(b,this->f_var);
     doPacking(b,this->found_var);
 }
 
@@ -130,8 +124,6 @@ void ccn_data_Base::parsimUnpack(cCommBuffer *b)
     doUnpacking(b,this->TSI_var);
     doUnpacking(b,this->capacity_var);
     doUnpacking(b,this->btw_var);
-    doUnpacking(b,this->theta_var);
-    doUnpacking(b,this->f_var);
     doUnpacking(b,this->found_var);
 }
 
@@ -225,26 +217,6 @@ void ccn_data_Base::setBtw(double btw)
     this->btw_var = btw;
 }
 
-int ccn_data_Base::getTheta() const
-{
-    return theta_var;
-}
-
-void ccn_data_Base::setTheta(int theta)
-{
-    this->theta_var = theta;
-}
-
-long ccn_data_Base::getF() const
-{
-    return f_var;
-}
-
-void ccn_data_Base::setF(long f)
-{
-    this->f_var = f;
-}
-
 bool ccn_data_Base::getFound() const
 {
     return found_var;
@@ -303,7 +275,7 @@ const char *ccn_dataDescriptor::getProperty(const char *propertyname) const
 int ccn_dataDescriptor::getFieldCount(void *object) const
 {
     cClassDescriptor *basedesc = getBaseClassDescriptor();
-    return basedesc ? 12+basedesc->getFieldCount(object) : 12;
+    return basedesc ? 10+basedesc->getFieldCount(object) : 10;
 }
 
 unsigned int ccn_dataDescriptor::getFieldTypeFlags(void *object, int field) const
@@ -325,10 +297,8 @@ unsigned int ccn_dataDescriptor::getFieldTypeFlags(void *object, int field) cons
         FD_ISEDITABLE,
         FD_ISEDITABLE,
         FD_ISEDITABLE,
-        FD_ISEDITABLE,
-        FD_ISEDITABLE,
     };
-    return (field>=0 && field<12) ? fieldTypeFlags[field] : 0;
+    return (field>=0 && field<10) ? fieldTypeFlags[field] : 0;
 }
 
 const char *ccn_dataDescriptor::getFieldName(void *object, int field) const
@@ -349,11 +319,9 @@ const char *ccn_dataDescriptor::getFieldName(void *object, int field) const
         "TSI",
         "capacity",
         "btw",
-        "theta",
-        "f",
         "found",
     };
-    return (field>=0 && field<12) ? fieldNames[field] : NULL;
+    return (field>=0 && field<10) ? fieldNames[field] : NULL;
 }
 
 int ccn_dataDescriptor::findField(void *object, const char *fieldName) const
@@ -369,9 +337,7 @@ int ccn_dataDescriptor::findField(void *object, const char *fieldName) const
     if (fieldName[0]=='T' && strcmp(fieldName, "TSI")==0) return base+6;
     if (fieldName[0]=='c' && strcmp(fieldName, "capacity")==0) return base+7;
     if (fieldName[0]=='b' && strcmp(fieldName, "btw")==0) return base+8;
-    if (fieldName[0]=='t' && strcmp(fieldName, "theta")==0) return base+9;
-    if (fieldName[0]=='f' && strcmp(fieldName, "f")==0) return base+10;
-    if (fieldName[0]=='f' && strcmp(fieldName, "found")==0) return base+11;
+    if (fieldName[0]=='f' && strcmp(fieldName, "found")==0) return base+9;
     return basedesc ? basedesc->findField(object, fieldName) : -1;
 }
 
@@ -393,11 +359,9 @@ const char *ccn_dataDescriptor::getFieldTypeString(void *object, int field) cons
         "int",
         "double",
         "double",
-        "int",
-        "long",
         "bool",
     };
-    return (field>=0 && field<12) ? fieldTypeStrings[field] : NULL;
+    return (field>=0 && field<10) ? fieldTypeStrings[field] : NULL;
 }
 
 const char *ccn_dataDescriptor::getFieldProperty(void *object, int field, const char *propertyname) const
@@ -446,9 +410,7 @@ std::string ccn_dataDescriptor::getFieldAsString(void *object, int field, int i)
         case 6: return long2string(pp->getTSI());
         case 7: return double2string(pp->getCapacity());
         case 8: return double2string(pp->getBtw());
-        case 9: return long2string(pp->getTheta());
-        case 10: return long2string(pp->getF());
-        case 11: return bool2string(pp->getFound());
+        case 9: return bool2string(pp->getFound());
         default: return "";
     }
 }
@@ -471,9 +433,7 @@ bool ccn_dataDescriptor::setFieldAsString(void *object, int field, int i, const 
         case 6: pp->setTSI(string2long(value)); return true;
         case 7: pp->setCapacity(string2double(value)); return true;
         case 8: pp->setBtw(string2double(value)); return true;
-        case 9: pp->setTheta(string2long(value)); return true;
-        case 10: pp->setF(string2long(value)); return true;
-        case 11: pp->setFound(string2bool(value)); return true;
+        case 9: pp->setFound(string2bool(value)); return true;
         default: return false;
     }
 }

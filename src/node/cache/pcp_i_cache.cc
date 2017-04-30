@@ -21,22 +21,37 @@ void pcp_i_cache::data_store(chunk_t elem, int hops, long f){
 	// if eviction is needed
 	if (full()){
 		if (cache.begin()->second.size()>1){
-			// find random chunk with smallest H
-			// cache.begin()->second[pos]
-			int pos = intrand(cache.begin()->second.size());
-			cache_index.erase(getChunkGivenPos(cache.begin()->second, pos));
-			cache.begin()->second.remove(getChunkGivenPos(cache.begin()->second, pos)); // smallest H has > 1 chunks, erase random chunk from Q[H]
+			// find chunk with smallest H
+			chunk_queue::iterator it = cache.begin()->second.begin();
+			cache_index.erase(*it);
+			cache.begin()->second.erase(it); // smallest H has > 1 chunks, erase the head
 		} else {
 			map<int, chunk_queue>::iterator it = cache.begin();
 			cache_index.erase(*it->second.begin());
 			cache.erase(it); // smallest H has only 1 chunk
 		}
+		// decrease the H of random data
+		unordered_map<chunk_t, chunk_info>::iterator it = cache_index.begin();
+		int random_index = intrand(cache_index.size());
+		//cout << random_index << endl;
+		for (int i=0;i<random_index;i++){
+			++it;
+		}
+		cache[it->second.h].remove(it->first);
+		if (cache[it->second.h].size()>1){
+			cache[it->second.h].remove(it->first);
+		} else {
+			map<int, chunk_queue>::iterator iter = cache.find(it->second.h);
+			cache.erase(iter);
+		}
+		it->second.h -= it->second.hops; // update chunk h on index
+		cache[it->second.h].push_back(it->first); // update chunk position on queue
 	}
 
 	// add the data into cache
-	int dp = getAncestorPar("dp");
-	cache[dp * hops].push_back(elem);
-	cache_index[elem] = {dp * hops, 0, 0};
+	int theta = getAncestorPar("theta1");
+	cache[theta * hops].push_back(elem);
+	cache_index[elem] = {theta * hops, hops, 0, 0};
 	//print_cache();
 }
 

@@ -272,9 +272,7 @@ void core_layer::handle_interest(ccn_interest *int_msg)
         data_msg->setCapacity(int_msg->getCapacity());
         data_msg->setTSI(int_msg->getHops());
         data_msg->setTSB(1);
-        data_msg->setTheta(1);
         interface_t interfacebit = (interface_t)1 << int_msg->getArrivalGate()->getIndex();
-        data_msg->setF(interfacebit);
 
         //nyoba
         //std::bitset<sizeof(size_t) * CHAR_BIT> b(interfacebit);
@@ -315,9 +313,7 @@ void core_layer::handle_interest(ccn_interest *int_msg)
 		data_msg->setTSI(int_msg->getHops() + 1);
 		data_msg->setTSB(1);
 		data_msg->setFound(true);
-		data_msg->setTheta(1);
 		interface_t interfacebit = (interface_t)1 << int_msg->getArrivalGate()->getIndex();
-		data_msg->setF(interfacebit);
 
 		//nyoba
 		//std::bitset<sizeof(size_t) * CHAR_BIT> b(interfacebit);
@@ -453,14 +449,14 @@ void core_layer::handle_data(ccn_data *data_msg)
 	{
     	//nyoba
     	interfaces = (pitIt->second).interfaces;//get interface list
-    	std::bitset<sizeof(size_t) * CHAR_BIT> b(interfaces); // get the number of interest that requested the data
-    	//if (b.count() > 3)
-    	//std::cout << b << endl;
-    	data_msg->setTheta(b.count()); // update requester number
-    	data_msg->setF(interfaces); // update requester list's bit
 
     	//nyoba
-		//std::cout << interfaces << endl;
+    	//std::bitset<sizeof(size_t) * CHAR_BIT> b(interfaces); // list of faces that requested the data
+		//int dp = b.count(); // number of faces that requested the data
+		//if (dp > 1){
+			//std::cout << b << endl;
+			//std::cout << dp << endl;
+		//}
 		//std::cout << data_msg->getF() << endl;
 		ContentStore->store(data_msg);
 		i = 0;
@@ -767,5 +763,9 @@ int	core_layer::send_data(ccn_data* msg, const char *gatename, int gateindex, in
 	}
 	#endif
 	return send (msg, gatename, gateindex);
+}
+
+long core_layer::get_requesting_face(chunk_t chunk) {
+	return PIT[chunk].interfaces;
 }
 //</aa>

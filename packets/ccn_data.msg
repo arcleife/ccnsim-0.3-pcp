@@ -29,10 +29,6 @@ packet ccn_data{
 
 //Betweenness decision strategy
 	double btw = 0;// carries the higher betweenness identified by the interest packet
-
-//PCP decision strategy
-	int theta = 0;// carries the number of faces that requested this data
-	long f = 0;// carries list of faces that request this data
 	
 	bool found = false; 
 }
