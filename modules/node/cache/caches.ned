@@ -46,3 +46,7 @@ simple pcp_i_cache extends base_cache{
 simple pcp_e_cache extends base_cache{
 	@class(pcp_e_cache);
 }
+
+simple lrud_cache extends base_cache{
+	@class(lrud_cache);
+}

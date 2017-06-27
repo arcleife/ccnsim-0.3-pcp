@@ -26,13 +26,15 @@ class PCP_D: public DecisionPolicy{
 	    cModule *node = cSimulation::getActiveSimulation()->getModule(id);
 	    long face = ((core_layer *) node->getModuleByPath(".core_layer"))->get_requesting_face(msg->getChunk());
 	    std::bitset<sizeof(size_t) * CHAR_BIT> b(face); // list of faces that requested the data
-	    int theta = b.count(); // number of faces that requested the data
+	    int dp = b.count(); // number of faces that requested the data
 	    int n_face = node->gateSize("face") - 1; //number of faces connected to node
-	    //cout << theta << endl;
-	    //cout << b << endl;
-	    //cout << gate_number << endl;
-	    //dpnya tentuin dulu
-	    if ( d==1 || theta >= 2 ) // entar si 2 nya ganti sama dynamic dp
+	    int theta;
+	    if (n_face <= 3){
+	    	theta = 2; //node will never aggregate request if theta = 1
+	    } else {
+	    	theta = n_face - 1;
+	    }
+	    if ( d==1 || dp >= theta )
 		return true;
 	    return false;
 	}

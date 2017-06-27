@@ -266,6 +266,17 @@ void statistics::finish(){
     }
 
     //Print and store global statistics
+    for (int i=0;i<num_nodes;i++){
+    	for (map<int,int>::iterator it=cores[i]->req_aggr.begin();it!=cores[i]->req_aggr.end();it++){
+    		cout << "node [" << i << "] with " << it->first << " requests aggregated: " << it->second << endl;
+    		sprintf (name, "node");
+			recordScalar(name, i);
+			sprintf (name, "aggregation");
+			recordScalar(name, it->first);
+			sprintf (name, "n_aggregation");
+			recordScalar(name, it->second);
+    	}
+    }
 
     //global_hit is the sum of the hits of each cache
     sprintf (name, "p_hit");

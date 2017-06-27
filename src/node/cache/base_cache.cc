@@ -45,6 +45,7 @@
 #include "pcp_e_policy.h"
 #include "pcp_i_policy.h"
 #include "pcp_d_policy.h"
+#include "pcp_d2_policy.h"
 
 #include "ccnsim.h"
 
@@ -107,15 +108,19 @@ void base_cache::initialize(){
     else if (decision_policy.compare("pcp_i")==0 ){
     	cModule *node = getParentModule();
     	int theta1 = getAncestorPar("theta1");
-    	decisor = new PCP_I(theta1, (core_layer *) node->getModuleByPath(".core_layer"));
+    	int id = getParentModule()->getId();
+    	decisor = new PCP_I(theta1, id);
     } else if (decision_policy.compare("pcp_e")==0 ){
     	cModule *node = getParentModule();
 		int theta2 = getAncestorPar("theta2");
-    	decisor = new PCP_E(theta2, (core_layer *) node->getModuleByPath(".core_layer"));
+		int id = getParentModule()->getId();
+    	decisor = new PCP_E(theta2, id);
     } else if (decision_policy.compare("pcp_d")==0 ){
-    	//int dp = getParentModule()->gateSize("face") - 1;
     	int id = getParentModule()->getId();
     	decisor = new PCP_D(id);
+    } else if (decision_policy.compare("pcp_d2")==0 ){
+    	int id = getParentModule()->getId();
+    	decisor = new PCP_D2(id);
     }
 
 	if (decisor==NULL){
@@ -225,6 +230,7 @@ void base_cache::store(cMessage *in){
 		//</aa>
 		cModule *core = getParentModule()->getModuleByPath(".core_layer");
 		long interface = ((core_layer *)core)->get_requesting_face(( (ccn_data* ) in )->getChunk());
+		//cout << "node " << getIndex() << " nface " << interface << endl;
 		data_store( ( (ccn_data* ) in )->getChunk(), ( (ccn_data* ) in )->getHops(), interface ); //store is an interface funtion: each caching node should reimplement that function
 
 		//<aa>

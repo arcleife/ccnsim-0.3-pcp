@@ -66,7 +66,8 @@ class core_layer : public abstract_node{
 		double get_repo_price();
 		//void set_repo_price(double price);
 		//</aa>
-		long get_requesting_face(chunk_t); // return list of faces that request the chunk, return 0 if the chunk doesn't exist
+		// return list of faces that request the chunk, return 0 if the chunk doesn't exist
+		long get_requesting_face(chunk_t);
 
     protected:
 		//Standard node Omnet++ functions
@@ -114,6 +115,7 @@ class core_layer : public abstract_node{
 		//Statistics
 		int interests;
 		int data;
+		map <int, int > req_aggr;
 
 		//<aa>
 		#ifdef SEVERE_DEBUG

@@ -34,7 +34,6 @@ void pcp_e_cache::data_store(chunk_t elem, int hops, long f){
 	// add the data into cache
 	cache[L + hops].push_back(elem);
 	cache_index[elem] = L + hops;
-	//print_cache();
 }
 
 bool pcp_e_cache::data_lookup(chunk_t elem, int hops, long f){
@@ -60,10 +59,6 @@ bool pcp_e_cache::data_lookup(chunk_t elem, int hops, long f){
 	it->second = L + hops; // update h_elem = cp + L
 	cache[it->second].push_back(elem);
 	cache_index[elem] = it->second;
-	/*cout << "L ";
-	cout << L;
-	cout << " hops ";
-	cout << hops << endl;*/
 	return true;
 }
 

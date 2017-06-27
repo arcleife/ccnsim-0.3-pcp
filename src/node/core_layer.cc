@@ -451,12 +451,16 @@ void core_layer::handle_data(ccn_data *data_msg)
     	interfaces = (pitIt->second).interfaces;//get interface list
 
     	//nyoba
-    	//std::bitset<sizeof(size_t) * CHAR_BIT> b(interfaces); // list of faces that requested the data
-		//int dp = b.count(); // number of faces that requested the data
-		//if (dp > 1){
-			//std::cout << b << endl;
+    	std::bitset<sizeof(size_t) * CHAR_BIT> b(interfaces); // list of faces that requested the data
+		int dp = b.count(); // number of faces that requested the data
+		if (dp > 1){
 			//std::cout << dp << endl;
-		//}
+			if (req_aggr[dp] != NULL){
+				req_aggr[dp] += 1;
+			} else {
+				req_aggr[dp] = 1;
+			}
+		}
 		//std::cout << data_msg->getF() << endl;
 		ContentStore->store(data_msg);
 		i = 0;

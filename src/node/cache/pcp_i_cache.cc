@@ -14,7 +14,6 @@ Register_Class(pcp_i_cache);
 
 void pcp_i_cache::data_store(chunk_t elem, int hops, long f){
 	// if data is already there, do nothing
-	//print_cache();
 	if (data_lookup(elem, hops, f))
 		return;
 
@@ -33,7 +32,6 @@ void pcp_i_cache::data_store(chunk_t elem, int hops, long f){
 		// decrease the H of random data
 		unordered_map<chunk_t, chunk_info>::iterator it = cache_index.begin();
 		int random_index = intrand(cache_index.size());
-		//cout << random_index << endl;
 		for (int i=0;i<random_index;i++){
 			++it;
 		}
@@ -49,15 +47,13 @@ void pcp_i_cache::data_store(chunk_t elem, int hops, long f){
 	}
 
 	// add the data into cache
-	int theta = getAncestorPar("theta1");
-	cache[theta * hops].push_back(elem);
-	cache_index[elem] = {theta * hops, hops, 0, 0};
-	//print_cache();
+	std::bitset<sizeof(size_t) * CHAR_BIT> b(f);
+	int nface = b.count();
+	cache[nface * hops].push_back(elem);
+	cache_index[elem] = {nface * hops, hops, 0, 0};
 }
 
 bool pcp_i_cache::data_lookup(chunk_t elem, int hops, long f){
-	//cout << "data lookup" << endl;
-	//print_cache();
 	unordered_map<chunk_t, chunk_info>::iterator it = cache_index.find(elem);
 	if (it == cache_index.end()){
 		// data is not found on the cache, return false
@@ -76,13 +72,6 @@ bool pcp_i_cache::data_lookup(chunk_t elem, int hops, long f){
 	}
 
 	// check if f is already in s1 (bit for s1 is the same as f)
-	// s1 == s1 & f
-	/*cout << "s1 ";
-	bitset<sizeof(size_t) * CHAR_BIT> b(it->second.s1);
-	cout << b << endl;
-	cout << "f ";
-	bitset<sizeof(size_t) * CHAR_BIT> a(f);
-	cout << a << endl;*/
 	if (it->second.s1 != (it->second.s1 & f)){
 		it->second.h -= hops; // update the h on the chunk_info
 		if (it->second.s2 != (it->second.s2 & f)){
@@ -92,14 +81,10 @@ bool pcp_i_cache::data_lookup(chunk_t elem, int hops, long f){
 		it->second.h += hops; // update the h on the chunk_info
 		it->second.s1 = it->second.s1 | f; // update the s1p
 	}
-	/*bitset<sizeof(size_t) * CHAR_BIT> c(it->second.s1);
-	cout << c << endl;*/
 
 	// update the H on the chunk_index and the cache
 	cache[it->second.h].push_back(elem);
 	cache_index[elem] = it->second;
-	//print_cache();
-	//cout << "data lookup end (ada)" << endl;
 	return true;
 }
 
